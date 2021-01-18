@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/root_your_offers_detail"
+	android:layout_width="match_parent"
+	android:fitsSystemWindows="false"
+	android:layout_height="match_parent"
+	android:background="@color/pale_gray"
+	tools:context=".ui.youroffers.YourOffersDetailActivity">
+
+	<!-- appbar_order -->
+	<include layout="@layout/appbar_your_offers_detail"/>
+	<include layout="@layout/body_your_offers_detail"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

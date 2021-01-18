@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:keepScreenOn="true">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/toolbar_common"/>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:paddingTop="56dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="CNSHA - CNSHA > USLAX - USLAX"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="2019- 10 - 10 ~ 2019 - 12 - 10"
+				/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="CY_CY,CY-DR,DR-DR | Dry 20' x5, RF 40' x 10"/>
+
+			<!-- filter layout-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center">
+					<Button
+                        android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:textSize="12sp"
+						style="@style/OpensansRegular"
+						android:textColor="@color/colorWhite"
+						android:textAllCaps="false"
+						android:background="@drawable/selector_button_market_filter"
+						android:paddingHorizontal="10dp"
+						android:text="cheap"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center">
+					<Button
+                        android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:textSize="12sp"
+						style="@style/OpensansRegular"
+						android:textColor="@color/colorWhite"
+						android:textAllCaps="false"
+						android:background="@drawable/selector_button_market_filter"
+						android:paddingHorizontal="10dp"
+						android:text="quick"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center">
+					<Button
+                        android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:textSize="12sp"
+						style="@style/OpensansRegular"
+						android:textColor="@color/colorWhite"
+						android:textAllCaps="false"
+						android:background="@drawable/selector_button_market_filter"
+						android:paddingHorizontal="10dp"
+						android:text="etd"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center">
+					<Button
+                        android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:textSize="12sp"
+						style="@style/OpensansRegular"
+						android:textColor="@color/colorWhite"
+						android:textAllCaps="false"
+						android:background="@drawable/selector_button_market_filter"
+						android:paddingHorizontal="10dp"
+						android:text="eta"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center">
+					<Button
+                        android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:textSize="12sp"
+						style="@style/OpensansRegular"
+						android:textColor="@color/colorWhite"
+						android:textAllCaps="false"
+						android:background="@drawable/selector_button_market_filter"
+						android:paddingHorizontal="10dp"
+						android:text="*"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_filter"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					>
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="8dp"
+						android:layout_gravity="center"
+						android:src="@drawable/btn_filter_default_d"/>
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<!-- delivery term container-->
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recycler_receive_delivery"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:clipToPadding="false"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp">
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

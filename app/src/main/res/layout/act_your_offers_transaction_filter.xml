@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/root_your_offers_detail"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="false"
+	android:background="@color/pale_gray"
+	tools:context=".ui.youroffers.YourOffersTransactionFilterActivity">
+
+	<!-- appbar_order -->
+	<include layout="@layout/appbar_your_offers_transaction_filter"/>
+	<include layout="@layout/body_your_offers_transaction_filter"/>
+
+	<Button
+		android:id="@+id/btn_apply"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_gravity="center|bottom"
+		android:layout_margin="0dp"
+		android:background="@drawable/selector_button_bottom"
+		android:text="@string/apply"
+		style="@style/txt_opensans_eb_16_white"
+		android:textAllCaps="true"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

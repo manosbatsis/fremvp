@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/pale_gray">
+
+	<!-- body: make sell offer-->
+	<include layout="@layout/body_sof_make_offer"/>
+
+	<!-- button -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom">
+		<Button
+			android:id="@+id/btn_make_sell_offer_next"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="@string/make_sell_offer"
+			style="@style/txt_opensans_eb_16_white"
+			android:textAllCaps="true"
+			android:background="@drawable/selector_button_bottom"
+			android:enabled="false"/>
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

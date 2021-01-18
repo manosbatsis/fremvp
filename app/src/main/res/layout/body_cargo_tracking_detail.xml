@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.cargotracking.CargoTrackingDetailActivity"
+    tools:showIn="@layout/act_cargo_tracking_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_cargo_tracking_container_list"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_container_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="20dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWhite"
+                style="@style/txt_opensans_eb_13_greyishbrown"
+                android:text="@string/cargo_tracking_container_no"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cargo_tracking_container_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:elevation="0dp"
+                android:background="@color/colorWhite"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cargo_tracking_divider_gradient_330000"/>
+
+        <LinearLayout
+            android:id="@+id/ll_cargo_tracking_schedule_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@color/pale_gray"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cargo_tracking_schedule_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:elevation="0dp"
+                android:background="@color/pale_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

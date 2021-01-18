@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pale_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_order_pay_plan_table_item_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:lineSpacingExtra="-2dp"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="'19-10-13"/>
+
+            <TextView
+                android:id="@+id/tv_order_pay_plan_table_item_midterm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="-2dp"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="W05\n$6,000"/>
+
+            <TextView
+                android:id="@+id/tv_order_pay_plan_table_item_remainder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="-2dp"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tv_order_pay_plan_table_item_sum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:lineSpacingExtra="-2dp"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="$6,000"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

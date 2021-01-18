@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/blue_violet"
+>
+	<ImageView
+		android:id="@+id/iv_splash_welcome"
+		android:layout_width="238dp"
+		android:layout_height="42dp"
+		android:src="@drawable/welcome"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		/>
+
+	<com.airbnb.lottie.LottieAnimationView
+		android:id="@+id/lottie_app_start"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:visibility="invisible"
+		app:lottie_fileName="splash_final.json"
+		app:lottie_autoPlay="false"
+		app:lottie_loop="true"
+		app:lottie_progress="@android:integer/config_longAnimTime"
+		app:lottie_repeatMode="reverse"
+		/>
+
+	<LinearLayout
+		android:id="@+id/ll_loading_splash"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginBottom="80dp"
+		android:layout_alignParentBottom="true"
+		android:gravity="center_horizontal|bottom"
+		android:visibility="visible">
+		<TextView
+			android:id="@+id/tv_loading_splash"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			style="@style/txt_opensans_r_13_white"/>
+		<FrameLayout
+			android:id="@+id/container_splash"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+</RelativeLayout>

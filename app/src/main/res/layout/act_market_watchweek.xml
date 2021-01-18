@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:background="@color/color_1d1d1d"
+        android:keepScreenOn="true">
+
+        <!-- toolbar_common -->
+        <include layout="@layout/toolbar_watch_deal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:paddingTop="56dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_arror_left"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="9dp"
+                    android:src="@drawable/ic_toolbar_back"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_baseweek"
+                    tools:ignore="MissingConstraints"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tv_baseweek"
+                    style="@style/txt_opensans_eb_20_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Week 5, 2020"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_arror_right"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:src="@drawable/ic_go_default"
+                    app:layout_constraintStart_toEndOf="@+id/tv_baseweek"
+                    tools:ignore="MissingConstraints"
+                    android:clickable="true"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabIndicatorFullWidth="false"
+                app:tabPaddingTop="10dp"
+                app:tabTextAppearance="@style/RouteSearch.TabText"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/greyish_brown"
+                app:tabIndicatorColor="@color/purpley_blue"
+                app:tabIndicatorHeight="5dp"
+                app:tabMaxWidth="0dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toBottomOf="@id/iv_route_search_done"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/pale_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/container_route_search_header"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout
+        android:id="@+id/ll_detail_route"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_1d1d1d">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_arror_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_toolbar_back"
+                android:clickable="true"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_title"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="01"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="10dp"
+                android:text="02"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"/>
+
+            <View
+                android:id="@+id/vw_underbar_01"
+                android:layout_width="19dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/purpley_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+            <View
+                android:id="@+id/vw_underbar_02"
+                android:layout_width="19dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/purpley_blue"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_container_body_prev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                />
+            <LinearLayout
+                android:id="@+id/ll_container_body_route"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

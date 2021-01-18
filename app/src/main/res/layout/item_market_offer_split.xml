@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="3dp"
+        android:background="@drawable/bg_round_corner_split_list"
+        >
+
+
+        <!-- 상단 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carrier_logo"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toStartOf="@+id/tv_carrier_name"
+                android:src="@drawable/ic_carrier_msk"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_twk"
+                style="@style/txt_opensans_b_13_737373"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_twk_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="/T"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_carrier_name"
+                style="@style/txt_opensans_b_15_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="4dp"
+                android:includeFontPadding="false"
+                android:text="MSK"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carrier_logo" />
+
+
+            <TextView
+                android:id="@+id/tv_carrier_cnt"
+                style="@style/txt_opensans_b_11_bfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="6dp"
+                android:text="+3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_carrier_name" />
+
+            <TextView
+                android:id="@+id/tv_twk_value"
+                style="@style/txt_opensans_b_15_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toStartOf="@+id/tv_twk"
+                android:text="$100-500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_twk"/>
+
+            <ImageButton
+                android:id="@+id/ib_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/btn_more_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_1a1a1a"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp">
+            <LinearLayout
+                android:id="@+id/lo_por"
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:paddingTop="4dp">
+                    <TextView
+                        android:id="@+id/tv_pol_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_opensans_eb_18_white"
+                        android:text="CNSHA"
+                        />
+                    <TextView
+                        android:id="@+id/tv_pol_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        style="@style/txt_opensans_b_11_bfbfbf"
+                        android:text="+3"/>
+                </LinearLayout>
+                <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+                    android:id="@+id/tv_pol_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginStart="1dp"
+                    style="@style/txt_opensans_r_11_greyishbrown"
+                    android:text="Shanghai, China"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    app:fading_width="16dp"
+                    app:fading_color="@color/color_0d0d0d"/>
+            </LinearLayout>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/trademarket_route_round_bar"/>
+            <LinearLayout
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:paddingTop="4dp">
+                    <TextView
+                        android:id="@+id/tv_pod_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_opensans_eb_18_white"
+                        android:text="USLAX"/>
+                    <TextView
+                        android:id="@+id/tv_pod_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        style="@style/txt_opensans_b_11_bfbfbf"
+                        android:text="+3"/>
+
+                </LinearLayout>
+
+                <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+                    android:id="@+id/tv_pod_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginStart="1dp"
+                    style="@style/txt_opensans_r_11_greyishbrown"
+                    android:text="Los Angeles, US"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    app:fading_width="16dp"
+                    app:fading_color="@color/color_0d0d0d"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end|top"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp">
+                        <TextView
+                            android:id="@+id/tv_weeks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/txt_opensans_b_13_737373"
+                            android:text="W01-W10"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_volume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.5dp"
+                            style="@style/txt_opensans_b_15_white"
+                            android:text="250"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.5dp"
+                            style="@style/txt_opensans_b_13_737373"
+                            android:layout_marginStart="3dp"
+                            android:text="T"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end|bottom">
+                    <LinearLayout
+                        android:id="@+id/ll_whole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_round_corner_2_purpley_blue"
+                        android:visibility="invisible">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="2dp"
+                            style="@style/txt_opensans_eb_10_black_two"
+                            android:textAlignment="center"
+                            android:text="@string/whole"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

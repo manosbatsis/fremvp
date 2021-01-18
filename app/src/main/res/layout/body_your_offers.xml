@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.youroffers.YourOffersActivity"
+    tools:showIn="@layout/act_your_offers">
+
+    <!-- Week Horizontal tab -->
+    <LinearLayout
+        android:id="@+id/ll_hsv_weekof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1d1d1d"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+        <RelativeLayout
+            android:id="@+id/rl_hsv_weekof_all"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:id="@+id/tv_hsv_weekof_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/all"
+                android:layout_above="@+id/iv_hsv_weekof_all"
+                style="@style/txt_opensans_eb_16_white"/>
+            <ImageView
+                android:id="@+id/iv_hsv_weekof_all"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blue_violet"/>
+        </RelativeLayout>
+        <HorizontalScrollView
+            android:id="@+id/hsv_weekof"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:overScrollMode="never"
+            android:layout_marginEnd="16dp">
+            <LinearLayout
+                android:id="@+id/ll_weekof"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@color/pale_gray"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ll_hsv_weekof">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_offer_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:elevation="0dp"
+            android:background="@color/pale_gray"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

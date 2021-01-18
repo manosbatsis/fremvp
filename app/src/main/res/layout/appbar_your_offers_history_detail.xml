@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbar_your_offers_history_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:showIn="@layout/act_your_offers_history_detail">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/title_bar"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:background="@color/title_bar">
+
+            <!-- offer no -->
+            <LinearLayout
+                android:id="@+id/ll_offer_no"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_rectangle_0d0d0d"
+                android:elevation="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="left|center_vertical"
+                    style="@style/txt_opensans_eb_15_greyishbrown"
+                    android:text="@string/your_inventory_offer_no"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_offer_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_offer_no_change"
+                        android:gravity="center_vertical"
+                        android:ellipsize="none"
+                        android:singleLine="true"
+                        style="@style/txt_opensans_r_15_ffffff"/>
+                    <ImageView
+                        android:id="@+id/iv_offer_no_change"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/btn_go_default_l"
+                        android:visibility="gone"/>
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/tv_offer_no"
+                        android:layout_toLeftOf="@+id/iv_offer_no_change"
+                        android:background="@drawable/normal_text_right_gradient"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- fixed toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin">
+
+            <include layout="@layout/toolbar_common"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>

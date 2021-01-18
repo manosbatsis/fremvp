@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_bof_content_volume"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:padding="0dp"
+    android:background="@color/white"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/chk_period"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="0dp"
+            android:checked="false"
+            android:enabled="true"
+            android:focusable="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:button="@android:color/transparent"
+            android:background="@drawable/selector_checkbox_sof_volume" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:hint="@string/week_cell_hint"
+            android:layout_toEndOf="@id/chk_period"
+            style="@style/txt_opensans_r_13_greyishbrown" />
+
+        <TextView
+            android:id="@+id/tv_volume"
+            android:layout_width="68dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:gravity="center"
+            android:text="@string/volume_value_hint"
+            android:layout_toEndOf="@id/tv_week"
+            android:background="@drawable/bg_round_corner_pale_gray"
+            style="@style/txt_opensans_r_13_greyishbrown" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

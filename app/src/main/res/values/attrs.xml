@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TickedProgressBarViewInterval">
+        <attr name="tickInterval" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension"/>
+        <attr name="umanoShadowHeight" format="dimension"/>
+        <attr name="umanoParallaxOffset" format="dimension"/>
+        <attr name="umanoFadeColor" format="color"/>
+        <attr name="umanoFlingVelocity" format="integer"/>
+        <attr name="umanoDragView" format="reference"/>
+        <attr name="umanoScrollableView" format="reference"/>
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float"/>
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0"/>
+            <enum name="collapsed" value="1"/>
+            <enum name="anchored" value="2"/>
+            <enum name="hidden" value="3"/>
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextPicker">
+        <attr name="textpicker_divider" format="reference"/>
+    </declare-styleable>
+
+    <!-- Calendar -->
+    <declare-styleable name="CustomizableCalendar">
+        <attr name="layout" format="reference"/>
+        <attr name="month_layout" format="reference"/>
+        <attr name="cell_layout" format="reference"/>
+    </declare-styleable>
+
+    <!-- For Progress view -->
+    <declare-styleable name="ProgressView">
+        <attr name="progressView_labelText" format="string"/>
+        <attr name="progressView_labelSize" format="dimension"/>
+        <attr name="progressView_labelColorInner" format="color"/>
+        <attr name="progressView_labelColorOuter" format="color"/>
+        <attr name="progressView_labelSpace" format="dimension"/>
+        <attr name="progressView_labelTypeface" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+        </attr>
+        <attr name="progressView_orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="progressView_max" format="float"/>
+        <attr name="progressView_progress" format="float"/>
+        <attr name="progressView_radius" format="dimension"/>
+        <attr name="progressView_padding" format="dimension"/>
+        <attr name="progressView_duration" format="integer"/>
+        <attr name="progressView_colorProgress" format="color"/>
+        <attr name="progressView_colorBackground" format="color"/>
+        <attr name="progressView_colorGradientStart" format="color"/>
+        <attr name="progressView_colorGradientEnd" format="color"/>
+        <attr name="progressView_autoAnimate" format="boolean"/>
+        <attr name="progressView_highlighting" format="boolean"/>
+        <attr name="progressView_highlightColor" format="color"/>
+        <attr name="progressView_highlightAlpha" format="float"/>
+        <attr name="progressView_highlightWidth" format="dimension"/>
+        <attr name="progressView_highlightRadius" format="dimension"/>
+    </declare-styleable>
+
+    <!-- For tool tip -->
+    <attr name="ttlm_defaultStyle" format="reference"/>
+
+    <!-- For tool tip -->
+    <declare-styleable name="TooltipLayout">
+        <attr name="ttlm_padding_top_bottom" format="dimension"/>
+        <attr name="ttlm_padding_left_right" format="dimension"/>
+        <attr name="ttlm_arrow_padding" format="dimension"/>
+        <attr name="ttlm_strokeColor" format="color"/>
+        <attr name="ttlm_backgroundColor" format="color"/>
+        <attr name="ttlm_strokeWeight" format="dimension"/>
+        <attr name="ttlm_cornerRadius" format="dimension"/>
+        <attr name="ttlm_arrowRatio" format="float"/>
+        <attr name="ttlm_overlayStyle" format="reference"/>
+        <attr name="ttlm_font" format="string"/>
+        <attr name="ttlm_animationStyle" format="reference"/>
+
+        <!-- text view style -->
+        <attr name="ttlm_textStyle" format="reference"/>
+    </declare-styleable>
+
+    <!-- For tool tip -->
+    <declare-styleable name="TooltipOverlay">
+        <attr name="android:color"/>
+        <attr name="android:alpha"/>
+        <attr name="ttlm_repeatCount" format="integer"/>
+        <attr name="ttlm_duration" format="integer"/>
+        <attr name="android:layout_margin"/>
+    </declare-styleable>
+
+    <!-- For Pie chart -->
+    <declare-styleable name="DecoView">
+        <attr name="dv_lineWidth" format="dimension"/>
+        <attr name="dv_rotateAngle" format="integer"/>
+        <attr name="dv_totalAngle" format="integer"/>
+        <attr name="dv_arc_gravity_horizontal" format="enum">
+            <enum name="Left" value="0"/>
+            <enum name="Center" value="1"/>
+            <enum name="Right" value="2"/>
+            <enum name="Fill" value="3"/>
+        </attr>
+        <attr name="dv_arc_gravity_vertical" format="enum">
+            <enum name="Top" value="0"/>
+            <enum name="Center" value="1"/>
+            <enum name="Bottom" value="2"/>
+            <enum name="Fill" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- FadingEdgeLayout -->
+    <declare-styleable name="FadingEdgeLayout">
+        <attr name="fel_edge" format="integer">
+            <flag name="top" value="1"/>
+            <flag name="bottom" value="2"/>
+            <flag name="left" value="4"/>
+            <flag name="right" value="8"/>
+        </attr>
+        <attr name="fel_size_top" format="dimension"/>
+        <attr name="fel_size_bottom" format="dimension"/>
+        <attr name="fel_size_left" format="dimension"/>
+        <attr name="fel_size_right" format="dimension"/>
+    </declare-styleable>
+
+    <!-- GradientTextView -->
+    <declare-styleable name="GradientTextView">
+        <attr name="fading_color" format="color"/>
+        <attr name="fading_width" format="dimension"/>
+    </declare-styleable>
+
+    <!-- rangebar  -->
+    <declare-styleable name="SimpleRangeView">
+        <attr name="lineColor" format="color" />
+        <attr name="activeLineColor" format="color" />
+        <attr name="fixedLineColor" format="color" />
+        <attr name="tickColor" format="color" />
+        <attr name="activeTickColor" format="color" />
+        <attr name="fixedTickColor" format="color" />
+        <attr name="activeThumbColor" format="color" />
+        <attr name="activeFocusThumbColor" format="color" />
+        <attr name="fixedThumbColor" format="color" />
+
+        <attr name="labelColor" format="color" />
+        <attr name="activeLabelColor" format="color" />
+        <attr name="activeThumbLabelColor" format="color" />
+        <attr name="fixedLabelColor" format="color" />
+        <attr name="fixedThumbLabelColor" format="color" />
+
+        <attr name="activeFocusThumbAlpha" format="float" />
+
+        <attr name="lineThickness" format="dimension" />
+        <attr name="activeLineThickness" format="dimension" />
+        <attr name="fixedLineThickness" format="dimension" />
+
+        <attr name="activeThumbRadius" format="dimension" />
+        <attr name="activeThumbFocusRadius" format="dimension" />
+        <attr name="fixedThumbRadius" format="dimension" />
+        <attr name="tickRadius" format="dimension" />
+        <attr name="activeTickRadius" format="dimension" />
+        <attr name="fixedTickRadius" format="dimension" />
+        <attr name="labelMarginBottom" format="dimension" />
+        <attr name="labelFontSize" format="dimension" />
+        <attr name="minDistanceBetweenLabels" format="dimension" />
+        <attr name="innerRangePadding" format="dimension" />
+        <attr name="innerRangePaddingLeft" format="dimension" />
+        <attr name="innerRangePaddingRight" format="dimension" />
+
+        <attr name="start" format="integer" />
+        <attr name="end" format="integer" />
+        <attr name="startFixed" format="integer" />
+        <attr name="endFixed" format="integer" />
+        <attr name="count" format="integer" />
+        <attr name="minDistance" format="integer" />
+        <attr name="maxDistance" format="integer" />
+
+        <attr name="movable" format="boolean" />
+        <attr name="showFixedLine" format="boolean" />
+        <attr name="showTicks" format="boolean" />
+        <attr name="showActiveTicks" format="boolean" />
+        <attr name="showFixedTicks" format="boolean" />
+        <attr name="showLabels" format="boolean" />
+        <attr name="isRange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeBarWithChart">
+        <attr name="barChartSelectedBackgroundColor" format="color" />
+        <attr name="barChartUnselectedBackgroundColor" format="color" />
+        <attr name="barChartSelectedLineColor" format="color" />
+        <attr name="barChartUnSelectedLineColor" format="color" />
+        <attr name="barActiveLineColor" format="color" />
+        <attr name="barLineColor" format="color" />
+        <attr name="barThumbColor" format="color" />
+        <attr name="barActiveTickRadius" format="dimension" />
+        <attr name="barActiveThumbColor" format="color" />
+    </declare-styleable>
+
+    <!-- Date Picker -->
+    <attr name="halfVisibleItemCount" format="integer"/>
+    <attr name="itemTextSize" format="dimension"/>
+    <attr name="itemMaximumWidthText" format="string"/>
+    <attr name="itemTextColor" format="color"/>
+    <attr name="textGradual" format="boolean"/>
+    <attr name="selectedTextColor" format="color"/>
+    <attr name="selectedTextSize" format="dimension"/>
+    <attr name="currentItemPosition" format="integer"/>
+    <attr name="itemWidthSpace" format="dimension"/>
+    <attr name="itemHeightSpace" format="dimension"/>
+    <attr name="zoomInSelectedItem" format="boolean"/>
+    <attr name="wheelCyclic" format="boolean"/>
+    <attr name="wheelCurtain" format="boolean"/>
+    <attr name="wheelCurtainColor" format="color"/>
+    <attr name="wheelCurtainBorder" format="boolean"/>
+    <attr name="wheelCurtainBorderColor" format="color"/>
+    <attr name="indicatorText" format="string"/>
+    <attr name="indicatorTextSize" format="dimension"/>
+    <attr name="indicatorTextColor" format="color"/>
+    <attr name="areaAlign" format="enum">
+        <enum name="align_left" value="0"/>
+        <enum name="align_center" value="1"/>
+        <enum name="align_right" value="2"/>
+    </attr>
+    <declare-styleable name="WheelPicker">
+        <attr name="halfVisibleItemCount"/>
+        <attr name="itemTextSize"/>
+        <attr name="itemMaximumWidthText"/>
+        <attr name="itemTextColor"/>
+        <attr name="textGradual"/>
+        <attr name="selectedTextColor"/>
+        <attr name="selectedTextSize"/>
+        <attr name="currentItemPosition"/>
+        <attr name="itemWidthSpace"/>
+        <attr name="itemHeightSpace"/>
+        <attr name="zoomInSelectedItem"/>
+        <attr name="wheelCyclic"/>
+        <attr name="wheelCurtain"/>
+        <attr name="wheelCurtainColor"/>
+        <attr name="wheelCurtainBorder" />
+        <attr name="wheelCurtainBorderColor"/>
+        <attr name="indicatorText"/>
+        <attr name="indicatorTextSize"/>
+        <attr name="indicatorTextColor"/>
+        <attr name="areaAlign"/>
+    </declare-styleable>
+
+    <declare-styleable name="YearPicker">
+        <attr name="startYear" format="integer"/>
+        <attr name="endYear" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MonthPicker">
+    </declare-styleable>
+
+    <declare-styleable name="DatePicker">
+        <attr name="halfVisibleItemCount"/>
+        <attr name="itemTextSize"/>
+        <attr name="itemTextColor"/>
+        <attr name="textGradual"/>
+        <attr name="selectedTextColor"/>
+        <attr name="selectedTextSize"/>
+        <attr name="itemWidthSpace"/>
+        <attr name="itemHeightSpace"/>
+        <attr name="zoomInSelectedItem"/>
+        <attr name="wheelCyclic"/>
+        <attr name="wheelCurtain"/>
+        <attr name="wheelCurtainColor"/>
+        <attr name="wheelCurtainBorder"/>
+        <attr name="wheelCurtainBorderColor"/>
+        <attr name="areaAlign"/>
+    </declare-styleable>
+
+</resources>

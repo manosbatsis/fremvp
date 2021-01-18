@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="false"
+	android:background="@color/pale_gray"
+	tools:context=".ui.selloffer.SofContractAct">
+
+	<!-- appbar_sof_contract -->
+	<include layout="@layout/appbar_route_filter"/>
+
+	<!-- Contents -->
+	<LinearLayout
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/pale_gray"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<include layout="@layout/appbar_sof_header_contract_filter"/>
+
+		<!-- Period & Volume -->
+		<LinearLayout
+            android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:orientation="vertical"
+			android:layout_marginTop="16dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="16dp"
+			android:elevation="1dp"
+			android:background="@drawable/bg_rectangle_white_top_round"
+			android:visibility="gone">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<TextView
+                    android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_alignParentStart="true"
+					android:gravity="center_vertical"
+					android:layout_marginStart="8dp"
+					android:text="@string/period_and_volume"
+					style="@style/txt_opensans_b_15_greyishbrown"/>
+				<ImageView
+					android:id="@+id/iv_check_mark"
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/btn_go_default_l"/>
+			</RelativeLayout>
+		</LinearLayout>
+
+		<!-- recyclerView -->
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recycler_view_contract"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingTop="12dp"
+			android:paddingBottom="20dp"
+			android:background="@color/pale_gray"
+			android:clipToPadding="false"
+			android:orientation="vertical"
+			android:scrollbars="vertical"
+			android:overScrollMode="never"
+			android:elevation="0dp"/>
+
+	</LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

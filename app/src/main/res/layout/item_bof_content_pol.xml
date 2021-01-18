@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bof_content_pol"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lo_bof_content_pol"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pale_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_content_polCd"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:layout_marginStart="40dp"
+            android:text=""
+            style="@style/txt_opensans_eb_16_greyishbrown"/>
+
+        <TextView
+            android:id="@+id/tv_content_polNm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="13dp"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:ellipsize="none"
+            style="@style/txt_opensans_r_13_greyishbrown"/>
+    </LinearLayout>
+</FrameLayout>
+

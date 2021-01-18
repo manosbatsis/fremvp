@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/color_ffffffff"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/tv_container_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_opensans_b_18_4c4c4c"
+                        android:text="Container 1"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_container_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        style="@style/txt_opensans_b_13_979797"
+                        android:text="Dry 40'"
+                        android:layout_toEndOf="@+id/tv_container_no"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/iv_expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/btn_expand_default_l"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_f2f4f9"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_colapse"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        style="@style/txt_opensans_eb_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="71dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="13dp"
+                        android:text="@string/booking_dashboard_vgm_total_weight" />
+
+                    <TextView
+                        android:id="@+id/tv_total_weight"
+                        style="@style/txt_opensans_b_23_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginStart="177dp"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_total_weight_unit"
+                        style="@style/txt_opensans_r_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toEndOf="@+id/tv_total_weight"
+                        android:text="@string/booking_dashboard_vgm_unit_kg"/>
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/ll_expand"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        style="@style/txt_opensans_eb_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="101dp"
+                        android:text="@string/booking_dashboard_vgm_total_weight"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_total_weight_unit_expand"
+                        style="@style/txt_opensans_r_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="6dp"
+                        android:text="@string/booking_dashboard_vgm_unit_kg"
+                        app:layout_constraintEnd_toEndOf="@+id/textView16"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                    <TextView
+                        android:id="@+id/tv_total_weight_expand"
+                        style="@style/txt_opensans_b_23_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:text="0"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_total_weight_unit_expand"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        style="@style/txt_opensans_eb_13_595959"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="83dp"
+                        android:text="@string/booking_dashboard_vgm_container_weight"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_container_weight_unit_expand"
+                        style="@style/txt_opensans_r_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/booking_dashboard_vgm_unit_kg"
+                        app:layout_constraintEnd_toEndOf="@+id/textView22"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <TextView
+                        android:id="@+id/tv_container_weight_expand"
+                        style="@style/txt_opensans_b_16_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_container_weight_unit_expand"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        style="@style/txt_opensans_eb_13_595959"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/booking_dashboard_vgm_cargo_weight"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_cargo_weight_unit_expand"
+                        style="@style/txt_opensans_r_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/booking_dashboard_vgm_unit_kg"
+                        app:layout_constraintEnd_toEndOf="@+id/textView32"
+                        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                    <TextView
+                        android:id="@+id/tv_cargo_weight_expand"
+                        style="@style/txt_opensans_b_16_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_cargo_weight_unit_expand"
+                        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_booking_no"
+        style="@style/txt_opensans_r_11_4c4c4c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_gravity="end"
+        android:text="AL0005989555"/>
+
+</LinearLayout>

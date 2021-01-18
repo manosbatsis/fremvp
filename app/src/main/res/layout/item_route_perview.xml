@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <View
+        android:id="@+id/v_left_view"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_port"
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="@dimen/route_grid_item_margine"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/selector_button_route_grid"
+            android:elevation="3dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tv_code_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                style="@style/txt_opensans_eb_15_white"
+                android:layout_marginTop="5dp"
+                android:text="CNSHA"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@android:color/transparent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal|top">
+
+
+                    <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="90dp"
+                        style="@style/txt_opensans_r_10_white"
+                        android:textSize="10sp"
+                        android:textColor="@color/very_light_pink"
+                        android:text="Shanghai,China"
+                        android:singleLine="true"
+                        android:ellipsize="none"
+                        app:fading_color="@color/colorWhite"
+                        app:fading_width="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/v_right_view"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bof_route_wizard_progress"
+    android:layout_marginTop="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/title_bar">
+
+    <!-- line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/greyish_brown">
+        </ImageView>
+    </LinearLayout>
+
+    <!-- circle layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="42dp"
+        android:paddingEnd="42dp"
+        android:orientation="horizontal">
+        <!-- 1st circle -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/buyoffer_route_dot_recently"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right|end"
+                android:background="@drawable/white_grey_circle_16_16">
+            </ImageView>
+        </LinearLayout>
+        <!-- 2nd circle -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="16dp">
+            <ImageView
+                android:id="@+id/buyoffer_route_dot_lane"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="centerInside"
+                android:background="@drawable/grey_circle_8_8">
+            </ImageView>
+        </LinearLayout>
+        <!-- 3rd circle -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="16dp">
+            <ImageView
+                android:id="@+id/buyoffer_route_dot_pols"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right|end|center_vertical"
+                android:background="@drawable/grey_circle_8_8">
+            </ImageView>
+        </LinearLayout>
+        <!-- 4th circle -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="16dp">
+            <ImageView
+                android:id="@+id/buyoffer_route_dot_pods"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right|end|center_vertical"
+                android:background="@drawable/grey_circle_8_8">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- label layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal">
+        <!-- 1st label -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/buyoffer_route_text_recently"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/buy_offer_recently"
+                style="@style/txt_opensans_b_10_white">
+            </TextView>
+        </LinearLayout>
+        <!-- 2nd label -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/buyoffer_route_text_lane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/buy_offer_service_lane"
+                style="@style/txt_opensans_r_10_greyishbrown"/>
+        </LinearLayout>
+
+        <!-- 3rd label -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/buyoffer_route_text_pols"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/buy_offer_pols"
+                style="@style/txt_opensans_r_10_greyishbrown"/>
+        </LinearLayout>
+
+        <!-- 4th label -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/buyoffer_route_text_pods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/buy_offer_pods"
+                style="@style/txt_opensans_r_10_greyishbrown"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

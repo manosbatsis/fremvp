@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.trademarket.MarketContainerFilterActivity"
+    android:background="@color/color_0d0d0d">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:orientation="vertical">
+                        <include layout="@layout/toolbar_common"/>
+
+                    </LinearLayout>
+
+                    <!-- rd term        -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:textColor="#ffffff"
+                            style="@style/txt_opensans_eb_25_white"
+                            android:text="@string/filter_container_title_rdterm"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/ic_information_dark"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_market_container_rdterm_filter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_round_corner_market_list"
+                            android:clipToPadding="true"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginBottom="24dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            style="@style/txt_opensans_eb_25_white"
+                            android:text="@string/filter_container_title_type"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_information_dark"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_market_container_type_filter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_round_corner_market_list"
+                            android:clipToPadding="true"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginBottom="24dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            style="@style/txt_opensans_eb_25_white"
+                            android:text="@string/filter_container_title_size"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/ic_information_dark"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_market_container_size_filter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_round_corner_market_list"
+                            android:clipToPadding="true"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginBottom="32dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <!-- button -->
+        <Button
+            android:id="@+id/btn_filter_container_apply"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="0dp"
+            android:background="@color/blue_violet"
+            android:text="@string/apply"
+            android:textAllCaps="true"
+            style="@style/txt_opensans_eb_16_white"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

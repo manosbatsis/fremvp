@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/appbar_home"/>
+
+	<!-- Contents -->
+	<LinearLayout
+		android:id="@+id/lo_menu_right_head"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@color/pale_gray"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<!-- filter button -->
+		<TextView
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top"
+			android:layout_marginTop="30dp"
+			android:layout_marginStart="16dp"
+			android:gravity="left|bottom"
+			android:text="Assigned Volume"
+			android:textSize="18sp"
+			android:fontFamily="@font/opensans_bold"
+			android:textColor="@color/greyish_brown"
+			android:textAllCaps="false"
+			android:background="@color/pale_gray"
+			style="?android:attr/borderlessButtonStyle"/>
+
+		<!-- recyclerView -->
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recycler_view_home"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			android:layout_marginTop="0dp"
+			android:padding="0dp"
+			android:background="@color/pale_gray"/>
+
+	</LinearLayout>
+
+	<!-- button: get real time quotes -->
+	<LinearLayout
+        android:layout_width="248dp"
+		android:layout_height="51dp"
+		android:layout_gravity="center_horizontal|top"
+		android:layout_marginTop="0dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:background="@color/very_light_pink"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:gravity="center_horizontal"
+		app:behavior_overlapTop="20dp"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<TextView
+            android:text="Get real time quotes"
+			android:fontFamily="@font/opensans_bold"
+			android:textColor="@color/white"
+			android:textSize="16sp"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

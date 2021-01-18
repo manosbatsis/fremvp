@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1d1d1d"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.booking.BookingDashboardActivity"
+    tools:showIn="@layout/act_booking_dashboard">
+
+    <FrameLayout
+        android:id="@+id/fl_filter_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_collapseMode="pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_booking_no"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_booking_no"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/btn_switch_d" />
+
+                <TextView
+                    android:id="@+id/tv_filter_booking_no"
+                    style="@style/txt_opensans_b_13_4c4c4c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="24dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cargo_tracking_search_booking_no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_round_corner_black_route_filter"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_booking_search"
+                    style="@style/txt_opensans_b_16_white"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cargo_tracking_search_hint"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColorHint="@color/greyish_brown" />
+
+                <ImageView
+                    android:id="@+id/iv_booking_search_clear"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_search_x_drak"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <!--filter layout -->
+    <LinearLayout
+        android:id="@+id/ll_filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/pale_gray"
+        app:layout_constraintTop_toBottomOf="@+id/fl_filter_search">
+
+        <!-- top select list -->
+        <RelativeLayout
+            android:id="@+id/rl_filter_list"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical|top"
+            android:background="@color/color_1d1d1d"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_filter_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/title_bar"
+                android:layout_toStartOf="@+id/iv_cargo_tracking_filter"
+                android:orientation="horizontal"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iv_filter"
+                android:background="@drawable/service_pol_horizontal_gradient_1d1d1d"/>
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/btn_filter_default_d" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/pale_gray"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_filter_container">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_booking_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pale_gray"
+            android:elevation="0dp"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

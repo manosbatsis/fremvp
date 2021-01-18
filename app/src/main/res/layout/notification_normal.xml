@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="135dp"
+	android:orientation="vertical"
+	android:background="@color/color_1d1d1d">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="32dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/notification_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="LOREM IPSUM"
+			style="@style/txt_opensans_eb_15_white"/>
+		<TextView
+			android:id="@+id/notification_info"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:maxLines="2"
+			android:text="Lorem ipsum dolor sit amet, Lorem ipsu dolor sit amet, Lorem ipsum dolor story, Lorem ipsum dolor sit.Lorem ipsum dolor sit amet, Lorem ipsu dolor sit amet, Lorem ipsum dolor story, Lorem ipsum dolor sit."
+			android:ellipsize="end"
+			style="@style/txt_opensans_r_15_verylightpink"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:gravity="center_horizontal|bottom">
+			<TextView
+                android:layout_width="60dp"
+				android:layout_height="5dp"
+				android:layout_gravity="center_horizontal|bottom"
+				android:background="@drawable/bg_round_corner_noti_greyish_brown"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

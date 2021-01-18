@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyberlogitec.freight9.lib.ui.view.StickyNestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bof_pod_frag_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.buyoffer.BofPodAct"
+    tools:showIn="@layout/act_bof_pod"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_overlapTop="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- top select list -->
+        <RelativeLayout
+            android:id="@+id/ll_bof_pod_horizontal_list"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical|top"
+            android:visibility="gone">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_selected_ports"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="12dp"
+                android:background="@color/title_bar"
+                android:orientation="horizontal"/>
+            <View
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/service_pol_horizontal_gradient_1d1d1d"/>
+        </RelativeLayout>
+
+        <!-- 4th: recyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/white">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</com.cyberlogitec.freight9.lib.ui.view.StickyNestedScrollView>

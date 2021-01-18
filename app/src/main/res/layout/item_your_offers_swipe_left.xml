@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_your_offers_detail_recycler_partial_table"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal">
+
+        <!-- Period -->
+        <TextView
+            android:id="@+id/tv_period"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="W01"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="$1,500"/>
+
+        <!-- Dealt -->
+        <TextView
+            android:id="@+id/tv_dealt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="@string/dealt"/>
+
+        <!-- Left -->
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="@string/left"/>
+
+        <!-- Cost Value -->
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="@string/cost_value"/>
+
+    </LinearLayout>
+</LinearLayout>

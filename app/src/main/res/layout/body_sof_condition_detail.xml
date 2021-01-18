@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.selloffer.SofConditionDetailAct"
+    tools:showIn="@layout/act_sof_condition_detail"
+    android:background="@color/pale_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:background="@color/pale_gray">
+
+        <!-- 0st : prepaid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical"
+            android:elevation="1dp"
+            android:background="@drawable/bg_rectangle_ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Prepaid (Plan 1)"
+                style="@style/txt_opensans_b_15_greyishbrown"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#f2f2f2"/>
+
+            <!-- sub title : 2nd -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Initial"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Mid Term"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Remainder"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- plan 1 percent : 3rd -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="30%"
+                    style="@style/txt_opensans_b_25_greyishbrown"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="60%"
+                    style="@style/txt_opensans_b_25_greyishbrown"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="10%"
+                    style="@style/txt_opensans_b_25_greyishbrown"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- plan 1 value : 4th -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="$450"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="$900"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="$150"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 1st: POL -->
+        <RelativeLayout
+            android:id="@+id/lo_pol"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_rectangle_ffffff">
+            <TextView
+                android:id="@+id/tv_pol_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="POL"
+                style="@style/txt_opensans_r_15_greyishbrown"/>
+            <TextView
+                android:id="@+id/tv_pol"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/tv_pol_title"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="CNSHA"
+                style="@style/txt_opensans_b_15_greyishbrown"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/tv_pol"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="Shanghai, China"
+                style="@style/txt_opensans_l_15_greyishbrown"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_arrow_right"/>
+        </RelativeLayout>
+
+        <!-- 2nd : initial payment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="1dp"
+            android:background="@drawable/bg_rectangle_ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="start|center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Initial Payment"
+                    style="@style/txt_opensans_b_15_greyishbrown"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="(pay 30% on deal date)"
+                    style="@style/txt_opensans_l_15_greyishbrown"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#f2f2f2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="$4,500"
+                style="@style/txt_opensans_r_15_595959"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_sell_offer_plan_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:elevation="1dp"
+            android:background="@drawable/bg_rectangle_ffffff">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

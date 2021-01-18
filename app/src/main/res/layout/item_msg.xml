@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1a1a1a"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lo_item_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/color_1a1a1a"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/blue_dot"/>
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="24dp"
+                android:text="Ever wondered how some graphic designers always manage to"
+                android:singleLine="true"
+                style="@style/txt_opensans_eb_15_white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            android:background="@color/color_1a1a1a"
+            app:layout_constraintTop_toBottomOf="@+id/lo_item_msg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:id="@+id/tv_msg_desc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                style="@style/txt_opensans_r_15_verylightpink"
+                android:lines="3"
+                android:ellipsize="end"
+                android:text="Lorem ipsum dolor sit amet, Lorem ipsu dolor sit amet, Lorem ipsum dolor story, Lorem ipsum dolor sit."/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="right"
+                android:text="07:18 PM"
+                style="@style/txt_opensans_r_13_737373"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

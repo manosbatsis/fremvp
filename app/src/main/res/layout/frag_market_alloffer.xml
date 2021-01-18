@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_1a1a1a"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_gravity="left"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/purpley_blue"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorHeight="5dp"
+        app:tabInlineLabel="false"
+        app:tabPaddingTop="10dp"
+        app:tabSelectedTextColor="@color/pale_gray"
+        app:tabTextAppearance="@style/txt_opensans_eb_16_white"
+        app:tabTextColor="@color/pale_gray">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="@string/split_market_all_offers_tab_bid"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="left|bottom"
+            android:text="@string/split_market_all_offers_tab_ask"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_buyoffers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_selloffers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

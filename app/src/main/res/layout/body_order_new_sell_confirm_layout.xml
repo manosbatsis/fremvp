@@ -1,0 +1,13 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/pale_gray"
+    android:orientation="vertical"
+    tools:context=".ui.sellorder.SellOrderActivity">
+
+    <include layout="@layout/body_sell_order_confirm" />
+
+</LinearLayout>

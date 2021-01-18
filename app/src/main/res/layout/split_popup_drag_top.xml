@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_split_popup_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_x_black"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_min_height"
+            android:visibility="gone">
+            <View
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_round_corner_split_grip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_round_corner_split_grip"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_split_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="8dp"
+                        style="@style/txt_opensans_eb_20_white"
+                        android:text="@string/counter_offers"/>
+                    <TextView
+                        android:id="@+id/tv_split_title_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="67dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        style="@style/txt_opensans_b_16_white"
+                        android:text="CNSHA - USLAX"/>
+                    <ImageView
+                        android:id="@+id/iv_carrier_logo"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_toStartOf="@id/tv_split_title_center"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_carrier_msk"/>
+                    <TextView
+                        android:id="@+id/tv_split_title_center_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="67dp"
+                        android:layout_toEndOf="@id/tv_split_title_center"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5.5dp"
+                        android:gravity="center_vertical"
+                        style="@style/txt_opensans_b_13_purpleyblue"
+                        android:text="15"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="01"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="02"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView"/>
+
+                    <View
+                        android:id="@+id/vw_underbar_01"
+                        android:layout_width="19dp"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/purpley_blue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+                    <View
+                        android:id="@+id/vw_underbar_02"
+                        android:layout_width="19dp"
+                        android:layout_height="5dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/purpley_blue"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_0d0d0d"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

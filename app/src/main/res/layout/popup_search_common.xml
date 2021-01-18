@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:alpha="0.0"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/color_1d1d1d">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_round_corner_white_route_filter"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                style="@style/txt_opensans_b_16_greyishbrown"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textCursorDrawable="@drawable/cursor_4c4c4c"
+                android:hint="@string/cargo_tracking_search_hint"
+                android:textColorHint="@color/very_light_pink"/>
+            <ImageView
+                android:id="@+id/iv_search_clear"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_search_x_drak"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_search_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="@color/black"
+        android:orientation="vertical"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	android:id="@+id/root_order"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="false"
+	android:background="@color/color_1d1d1d"
+	tools:context=".ui.booking.BookingDashboardDetailActivity">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/appbar_dashboard"/>
+	<include layout="@layout/body_booking_dashboard_si"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

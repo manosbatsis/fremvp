@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/pale_gray">
+
+	<!-- body -->
+	<include layout="@layout/body_sof_condition" />
+
+	<!-- button -->
+	<Button
+		android:id="@+id/btn_condition_next"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_gravity="center|bottom"
+		android:layout_margin="0dp"
+		android:text="@string/next"
+		android:textAllCaps="false"
+		android:enabled="true"
+		android:background="@drawable/button_bottom_enable_disable"
+		style="@style/txt_opensans_eb_16_white">
+	</Button>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

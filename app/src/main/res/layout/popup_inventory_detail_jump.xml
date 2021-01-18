@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popup_inventory_detail_jump"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e6000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/iv_inventory_detail_jump_popup_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_x_default"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_inventory_detail_jump_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                style="@style/txt_opensans_b_21_white"
+                android:text="@string/your_inventory_in_stock"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                style="@style/txt_opensans_r_16_737373"
+                android:text="@string/your_inventory_next_step"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_inventory_detail_jump_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_round_corner_8_purpley_blue"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="@string/your_inventory_next_new_sell_offer"
+                style="@style/txt_opensans_b_16_white"/>
+            <Button
+                android:id="@+id/btn_inventory_detail_jump_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_corner_8_purpley_blue"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/your_inventory_next_new_booking"
+                style="@style/txt_opensans_b_16_white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

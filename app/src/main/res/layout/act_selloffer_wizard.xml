@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/pale_gray"
+	tools:context=".ui.selloffer.SofWizardActivity">
+
+	<!-- appbar_sof_wizard -->
+	<include layout="@layout/appbar_sof_wizard"/>
+
+	<!-- body -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_marginBottom="0dp"
+		android:background="@color/pale_gray"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.cyberlogitec.freight9.lib.ui.fragmentstepper.FragmentStepper
+			android:id="@+id/wizard_stepper"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

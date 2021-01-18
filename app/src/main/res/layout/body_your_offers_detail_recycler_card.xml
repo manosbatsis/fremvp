@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 3rd card : volume input & Price -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    style="@style/CardViewStyle"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:id="@+id/ll_your_offers_detail_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- View Table Yes/No-->
+        <LinearLayout
+            android:id="@+id/ll_your_offers_detail_recycler_view_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chk_your_offers_detail_view_table"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:checked="false"
+                android:button="@android:color/transparent"
+                android:background="@drawable/bg_title_checkbox"/>
+            <TextView
+                android:id="@+id/tv_your_offers_detail_view_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_gravity="center_vertical"
+                style="@style/txt_opensans_r_13_c7c7c7"
+                android:text="@string/your_offer_view_table"/>
+        </LinearLayout>
+
+        <!-- Partial graph Header : ll_your_offers_detail_recycler_header_partial_graph -->
+        <include layout="@layout/body_your_offers_detail_recycler_header_partial_graph"/>
+
+        <!-- Partial table Header : ll_your_offers_detail_recycler_header_partial_table -->
+        <include layout="@layout/body_your_offers_detail_recycler_header_partial_table"/>
+
+        <!-- Whole Header : ll_your_offers_detail_recycler_header_whole -->
+        <include layout="@layout/body_your_offers_detail_recycler_header_whole"/>
+
+        <!-- recycler view -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:elevation="0dp"
+            android:padding="0dp"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <View
+            android:id="@+id/view_recycler_bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f2f2f2"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rl_sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:gravity="start|center_vertical"
+                    style="@style/txt_opensans_b_16_greyishbrown"
+                    android:text="@string/volume_sum"/>
+                <TextView
+                    android:id="@+id/tv_sum_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    style="@style/txt_opensans_b_16_greyishbrown"
+                    android:text="$0"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

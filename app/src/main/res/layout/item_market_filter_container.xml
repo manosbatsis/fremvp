@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Space
+        android:id="@+id/space_top"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_market_filter_item"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="0dp"
+        android:gravity="center_vertical"
+        android:duplicateParentState="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_15_6f5ce7"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/selector_text_market_filter"
+            android:text=""
+            />
+
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:button="@android:color/transparent"
+            android:background="@drawable/selector_checkbox_market_filter"
+            android:clickable="false"
+            />
+    </RelativeLayout>
+    <Space
+        android:id="@+id/space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+</LinearLayout>

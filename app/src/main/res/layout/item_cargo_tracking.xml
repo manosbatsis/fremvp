@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_booking_no"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center_vertical"
+        android:text="BKG NO. AL0005989555"
+        style="@style/txt_opensans_b_11_greyishbrown"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/CardViewStyle"
+        tools:ignore="ContentDescription">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_logo"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                app:layout_constraintBottom_toTopOf="@+id/div_carrier"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/iv_carrier_logo"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/carrier_logo_default_l"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <TextView
+                    android:id="@+id/tv_carrier_name"
+                    style="@style/txt_opensans_b_15_greyishbrown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="bottom"
+                    android:includeFontPadding="false"
+                    android:text="@string/all_carriers"
+                    app:layout_constraintStart_toEndOf="@+id/iv_carrier_logo"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tv_vvd_digit"
+                    style="@style/txt_opensans_r_11_848484"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBaseline="@+id/tv_carrier_name"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="bottom"
+                    android:includeFontPadding="false"
+                    android:text="SP1 MAERSK GUATEMALA  017W"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tv_carrier_name"
+                    app:layout_constraintStart_toEndOf="@+id/tv_carrier_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/div_carrier"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f2f4f9"
+                app:layout_constraintBottom_toTopOf="@+id/ll_vessel_schedule"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_logo"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_vessel_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingStart="16dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/div_carrier"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/div_schedule">
+                <include layout="@layout/item_cargo_tracking_schedule"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f2f4f9"
+                app:layout_constraintTop_toBottomOf="@+id/ll_vessel_schedule"
+                app:layout_constraintBottom_toTopOf="@+id/ll_expand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/ll_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/div_schedule"
+                app:layout_constraintBottom_toTopOf="@+id/ll_expand_content">
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/btn_expand_default_l"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expand_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_expand"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_f2f4f9"/>
+                
+                <!-- Booking No.-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/cargo_tracking_title_booking_no"
+                        style="@style/txt_opensans_b_11_greyishbrown"/>
+                    <TextView
+                        android:id="@+id/cargo_tracking_item_booking_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="AL0005989555"
+                        style="@style/txt_opensans_r_11_greyishbrown"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/color_f2f4f9"/>
+
+                <!-- bl, h.bl, m.bl-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="108dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/cargo_tracking_title_bl_no"
+                            style="@style/txt_opensans_b_11_greyishbrown"/>
+                        <TextView
+                            android:id="@+id/cargo_tracking_item_bl_no"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="-"
+                            style="@style/txt_opensans_r_11_greyishbrown"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="108dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/cargo_tracking_title_hbl_no"
+                            style="@style/txt_opensans_b_11_greyishbrown"/>
+                        <TextView
+                            android:id="@+id/cargo_tracking_item_hbl_no"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="-"
+                            style="@style/txt_opensans_r_11_greyishbrown"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="108dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/cargo_tracking_title_mbl_no"
+                            style="@style/txt_opensans_b_11_greyishbrown"/>
+                        <TextView
+                            android:id="@+id/cargo_tracking_item_mbl_no"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="-"
+                            style="@style/txt_opensans_r_11_greyishbrown"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/color_f2f4f9"/>
+
+                <!-- Container No.-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/cargo_tracking_title_container_no"
+                        style="@style/txt_opensans_b_11_greyishbrown"/>
+                    <TextView
+                        android:id="@+id/cargo_tracking_item_container_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Container NO"
+                        style="@style/txt_opensans_r_11_greyishbrown"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/color_f2f4f9"/>
+
+                <!-- Consignee -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/cargo_tracking_title_consignee"
+                        style="@style/txt_opensans_b_11_greyishbrown"/>
+                    <TextView
+                        android:id="@+id/cargo_tracking_item_consignee"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="EUSU"
+                        style="@style/txt_opensans_r_11_greyishbrown"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/color_f2f4f9"/>
+
+                <!-- Shipper -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingBottom="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/cargo_tracking_title_shipper"
+                        style="@style/txt_opensans_b_11_greyishbrown"/>
+                    <TextView
+                        android:id="@+id/cargo_tracking_item_shipper"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Cyberlogitec, Seoul"
+                        style="@style/txt_opensans_r_11_greyishbrown"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

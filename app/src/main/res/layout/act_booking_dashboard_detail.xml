@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:id="@+id/root_order"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fitsSystemWindows="false"
+		android:background="@color/color_1d1d1d"
+		tools:context=".ui.booking.BookingDashboardDetailActivity">
+
+		<!-- toolbar_common -->
+		<include layout="@layout/appbar_dashboard"/>
+		<include layout="@layout/body_booking_dashboard_detail"/>
+
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+	<LinearLayout
+		android:id="@+id/ll_detail_holder"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="invisible">
+		<RelativeLayout
+			android:id="@+id/ll_swipe_holder_title"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:background="@color/color_1d1d1d">
+			<TextView
+				android:id="@+id/tv_header_title"
+				style="@style/txt_opensans_eb_20_white"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_centerVertical="true"/>
+			<ImageView
+				android:id="@+id/iv_arror_back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:src="@drawable/ic_x_default"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:clickable="true"/>
+		</RelativeLayout>
+		<LinearLayout
+
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:background="@color/color_1d1d1d"
+			android:orientation="horizontal"
+			android:clickable="true">
+			<LinearLayout
+				android:id="@+id/ll_detail_body"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"/>
+			<LinearLayout
+				android:id="@+id/ll_detail_body_vgm"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"/>
+			<LinearLayout
+				android:id="@+id/ll_detail_body_invoice"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"/>
+
+
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

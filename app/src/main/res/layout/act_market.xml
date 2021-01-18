@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/color_1d1d1d"
+    android:keepScreenOn="true">
+
+    <!-- toolbar_common -->
+    <include layout="@layout/toolbar_common"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingTop="56dp">
+        <LinearLayout
+            android:id="@+id/container_current_route"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_market_pol"
+                        style="@style/txt_opensans_eb_26_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="125dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+                        android:id="@+id/tv_market_pol_detail"
+                        style="@style/txt_opensans_l_13_aaaaaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="123dp"
+                        android:singleLine="true"
+                        android:ellipsize="none"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="34dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:fading_width="10dp"
+                        app:fading_color="@color/color_1d1d1d"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/trademarket_route_round_bar"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/tv_market_pod"
+                        style="@style/txt_opensans_eb_26_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="125dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+                        android:id="@+id/tv_market_pod_detail"
+                        style="@style/txt_opensans_l_13_aaaaaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginStart="2dp"
+                        android:maxWidth="123dp"
+                        android:singleLine="true"
+                        android:ellipsize="none"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:fading_width="10dp"
+                        app:fading_color="@color/color_1d1d1d"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_go_default"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--filter layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical">
+                <Button
+                    android:id="@+id/btn_market_filter_carrier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    style="@style/txt_opensans_r_12_white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/selector_button_market_filter"
+                    android:paddingHorizontal="10dp"
+                    android:text=""
+                    android:minWidth="40dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical">
+                <Button
+                    android:id="@+id/btn_market_filter_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    style="@style/txt_opensans_r_12_white"
+                    android:textColor="@color/colorWhite"
+                    android:textAllCaps="false"
+                    android:background="@drawable/selector_button_market_filter"
+                    android:paddingHorizontal="10dp"
+                    android:minWidth="40dp"
+                    android:text=""/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical">
+                <Button
+                    android:id="@+id/btn_market_filter_ppd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    style="@style/txt_opensans_r_12_white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/selector_button_market_filter"
+                    android:paddingHorizontal="10dp"
+                    android:minWidth="40dp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_filter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/btn_filter_default_d"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.github.mikephil.charting.charts.OfferChart
+                android:id="@+id/chart_trade_offer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="35dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg_round_corner_black_left_right"
+                android:focusableInTouchMode="false">
+                <View
+                    android:id="@+id/v_circle"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/bg_circle_5_purplesh_blue"
+                    android:focusableInTouchMode="false"
+                    />
+                <TextView
+                    android:id="@+id/tv_onair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    style="@style/txt_opensans_r_13_bfbfbf"
+                    android:text="@string/market_stomp_on_air"
+                    android:focusableInTouchMode="false"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/split_market_view"/>
+    <include layout="@layout/split_market_popup"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+	android:background="@color/pale_gray"
+    tools:context=".ui.inventory.RouteFilterActivity">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/appbar_route_filter"/>
+	<include layout="@layout/body_route_filter"/>
+	<include layout="@layout/split_market_view"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

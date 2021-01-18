@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pale_gray"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vw_top_margin"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_top_balloon"
+        android:layout_width="98dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="2020-05-21"
+        android:background="@drawable/bg_round_corner_greyish_15"
+        style="@style/txt_opensans_r_13_white"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/CardViewStyle"
+        tools:ignore="ContentDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_history_event"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_history_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Bought Out !"
+                    android:layout_centerVertical="true"
+                    style="@style/txt_opensans_b_15_greyishbrown"/>
+                <ImageView
+                    android:id="@+id/iv_history_detail"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/btn_go_default_l"/>
+            </RelativeLayout>
+    
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/color_f2f2f2"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_history_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All week sold out"
+                    style="@style/txt_opensans_r_15_greyishbrown"/>
+
+                <TextView
+                    android:id="@+id/tv_history_desc_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="$2,000 | 100 T"
+                    style="@style/txt_opensans_r_15_greyishbrown"/>
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/tv_date_time_behaviour"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="16:00:22 | by Cyberlogitec"
+                style="@style/txt_opensans_r_13_bfbfbf"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_your_offers_detail_recycler_header_partial_table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <!-- list view title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Period -->
+        <TextView
+            android:id="@+id/tv_title_partial_table_period"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            style="@style/txt_opensans_b_11_greyishbrown"
+            android:text="@string/volume_period"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tv_title_partial_table_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_b_11_greyishbrown"
+            android:text="@string/price_t"/>
+
+        <!-- Dealt -->
+        <TextView
+            android:id="@+id/tv_title_partial_table_dealt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_b_11_greyishbrown"
+            android:text="@string/dealt"/>
+
+        <!-- Left -->
+        <TextView
+            android:id="@+id/tv_title_partial_table_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_b_11_greyishbrown"
+            android:text="@string/left"/>
+
+        <!-- Cost Value -->
+        <TextView
+            android:id="@+id/tv_title_partial_table_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_b_11_greyishbrown"
+            android:text="@string/cost_value"/>
+
+        <ImageView
+            android:id="@+id/iv_title_partial_table"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/btn_go_default_l"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

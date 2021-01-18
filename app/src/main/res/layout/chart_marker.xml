@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="185dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_corner_8_e6616161"
+    android:id="@+id/ll_marker_view"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <RelativeLayout
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_greyishbrown"
+            android:layout_gravity="start"
+            android:text="@string/market_watch_marker_dealdate"/>
+
+        <TextView
+            android:id="@+id/tv_marker_dealdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_gravity="end"
+            android:text="-"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_greyishbrown"
+            android:layout_gravity="start"
+            android:text="@string/market_watch_marker_volume"/>
+
+        <TextView
+            android:id="@+id/tv_marker_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_gravity="end"
+            android:text="-"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_greyishbrown"
+            android:layout_gravity="start"
+            android:text="@string/market_watch_marker_open"/>
+
+        <TextView
+            android:id="@+id/tv_marker_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_gravity="end"
+            android:text="-"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_greyishbrown"
+            android:layout_gravity="start"
+            android:text="@string/market_watch_marker_high"/>
+
+        <TextView
+            android:id="@+id/tv_marker_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_gravity="end"
+            android:text="-"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_greyishbrown"
+            android:layout_gravity="start"
+            android:text="@string/market_watch_marker_low"/>
+
+        <TextView
+            android:id="@+id/tv_marker_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_gravity="end"
+            android:text="-"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_greyishbrown"
+            android:layout_gravity="start"
+            android:text="@string/market_watch_marker_closed"/>
+
+        <TextView
+            android:id="@+id/tv_marker_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_gravity="end"
+            android:text="-"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
+

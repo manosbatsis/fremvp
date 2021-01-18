@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <Space
+        android:id="@+id/space_top"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/item_filter_carrier_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/carrier_logo_default_d"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_filter_carrier_name"
+            style="@style/txt_opensans_b_15_white"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_filter_carrier_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/item_filter_carrier_name"
+            app:layout_constraintStart_toEndOf="@+id/item_filter_carrier_name"
+            android:layout_toEndOf="@+id/item_filter_carrier_logo"
+            >
+
+        <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+            android:id="@+id/item_filter_carrier_name_detail"
+            style="@style/txt_opensans_r_10_greyishbrown"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="23dp"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="none"
+            app:fading_width="24dp"
+            app:fading_color="@color/color_1d1d1d"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/btn_carrier_selected"
+            style="@style/btn_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Space
+        android:id="@+id/space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+</LinearLayout>

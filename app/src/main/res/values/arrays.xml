@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chart_type">
+        <item>@string/market_watch_chart_candle</item>
+        <item>@string/market_watch_chart_line</item>
+        <item>@string/market_watch_chart_mountain</item>
+        <!--<item>@string/market_watch_chart_hollow_candle</item>
+        <item>@string/market_watch_chart_bar</item>
+        <item>@string/market_watch_chart_colored_bar</item>-->
+    </string-array>
+
+    <string-array name="chart_interval">
+        <item>@string/market_watch_chart_1day</item>
+        <item>@string/market_watch_chart_1week</item>
+        <item>@string/market_watch_chart_1month</item>
+    </string-array>
+
+    <string-array name="chart_index_interval">
+        <item>@string/market_index_chart_daily</item>
+        <item>@string/market_index_chart_weekly</item>
+        <item>@string/market_index_chart_monthly</item>
+    </string-array>
+
+    <!--<string-array name="chart_indicators">
+        <item>@string/market_watch_chart_indicator_mae</item>
+        <item>@string/market_watch_chart_indicator_mad</item>
+        <item>@string/market_watch_chart_indicator_macd</item>
+        <item>@string/market_watch_chart_indicator_rsi</item>
+        <item>@string/market_watch_chart_indicator_bolinger_band</item>
+    </string-array>-->
+    <string-array name="tab_deal_chart">
+        <item>@string/market_watch_deal_chart</item>
+        <item>@string/market_watch_deal_history</item>
+        <item>@string/market_watch_deal_bid</item>
+        <item>@string/market_watch_deal_ask</item>
+    </string-array>
+
+    <string-array name="tab_bookingdashboard_si">
+        <item>@string/booking_dashboard_si_parties</item>
+        <item>@string/booking_dashboard_si_container</item>
+        <item>@string/booking_dashboard_si_mark_desc</item>
+    </string-array>
+
+    <array name="autosize_text_sizes">
+        <item>1sp</item>
+        <item>3sp</item>
+        <item>6sp</item>
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+    </array>
+
+</resources>

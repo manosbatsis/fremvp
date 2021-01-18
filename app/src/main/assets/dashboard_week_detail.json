@@ -1,0 +1,34 @@
+[
+  {
+    "offerNumber": "P202004230903274225330009815",
+    "baseYearWeek": "202022",
+    "dealQty": 300,
+    "dealPrice": 827,
+    "dealAmt": 827,
+    "offerQty": 300,
+    "leftQty": 0,
+    "leftPrice": 827,
+    "leftAmt": 0,
+    "tradeClosing": "20200504010000000000",
+    "lineItemDealHistoryLog": [
+      {
+        "eventReferenceNumber": "F202004230903312832530009418",
+        "offerNumber": "P202004230903274225330009815",
+        "offerChangeSeq": 0,
+        "dealQty": 0,
+        "dealPrice": 0,
+        "dealAmt": 0,
+        "eventTimestamp": "20200423090331283253"
+      },
+      {
+        "eventReferenceNumber": "D202004230903333909860002753",
+        "offerNumber": "P202004230903274225330009815",
+        "offerChangeSeq": 1,
+        "dealQty": 300,
+        "dealPrice": 827,
+        "dealAmt": 248100,
+        "eventTimestamp": "20200423090333390986"
+      }
+    ]
+  }
+]

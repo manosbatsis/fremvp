@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:id="@+id/root_order"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fitsSystemWindows="false"
+		android:background="@color/color_1d1d1d"
+		tools:context=".ui.booking.BookingDashboardActivity">
+
+		<!-- toolbar_common -->
+		<include layout="@layout/appbar_dashboard"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="56dp"
+			android:orientation="vertical">
+
+			<include layout="@layout/body_booking_dashboard"/>
+		</LinearLayout>
+		<!--	<include layout="@layout/split_market_view"/>-->
+
+
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+	<LinearLayout
+		android:id="@+id/ll_swipe_holder"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="invisible">
+		<LinearLayout
+			android:id="@+id/ll_swipe_holder_title"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:orientation="vertical"
+			android:gravity="center_vertical"
+			android:background="@color/color_1d1d1d">
+			<ImageView
+				android:id="@+id/iv_arror_back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:src="@drawable/ic_x_default"
+				android:layout_gravity="end"
+				android:clickable="true"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/color_1d1d1d"
+			android:orientation="vertical">
+			<com.google.android.material.tabs.TabLayout
+				android:id="@+id/tabLayout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:tabIndicatorFullWidth="false"
+				app:tabPaddingTop="10dp"
+				app:tabTextAppearance="@style/RouteSearch.TabText"
+				app:tabSelectedTextColor="@color/white"
+				app:tabTextColor="@color/greyish_brown"
+				app:tabIndicatorColor="@color/purpley_blue"
+				app:tabIndicatorHeight="5dp"
+				app:tabMaxWidth="0dp"
+				app:tabGravity="fill"
+				app:tabMode="fixed"
+				android:layout_marginStart="12dp"
+				app:layout_constraintTop_toBottomOf="@id/iv_route_search_done"
+				app:layout_constraintBottom_toBottomOf="parent"
+				/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="vertical">
+			<androidx.viewpager2.widget.ViewPager2
+				android:id="@+id/vp_swipe"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/pale_gray"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/container_route_search_header"/>
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+</FrameLayout>

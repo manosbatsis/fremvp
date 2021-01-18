@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pale_gray">
+
+    <!-- card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_round_corner_white">
+
+        <!-- 상단 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_carrier_logo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/carrier_logo_image"
+                android:src="@drawable/carrier_logo_msk"/>
+
+            <TextView
+                android:id="@+id/tv_carrier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/iv_carrier_logo"
+                android:gravity="center"
+                android:text="@string/carrier_name_hint"
+                style="@style/txt_opensans_b_15_greyishbrown"/>
+
+            <TextView
+                android:id="@+id/tv_carrier_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:gravity="start|center_vertical"
+                android:layout_toEndOf="@+id/tv_carrier_name"
+                android:layout_toStartOf="@+id/tv_twk_value"
+                android:text="@string/carrier_count_hint"
+                style="@style/txt_opensans_b_11_greyishbrown"/>
+
+            <TextView
+                android:id="@+id/tv_twk_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="@string/price_hint"
+                style="@style/txt_opensans_b_15_bfbfbf"/>
+        </RelativeLayout>
+
+        <!-- seperator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_f2f2f2"/>
+
+        <!-- 중간: POR~POL-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lo_pol"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_pol_cd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/pol_cd_hint"
+                    style="@style/txt_opensans_b_20_greyishbrown"/>
+
+                <TextView
+                    android:id="@+id/tv_pol_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/carrier_count_hint"
+                    style="@style/txt_opensans_b_11_greyishbrown"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vw_route_seprator"
+                android:layout_width="15dp"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@+id/lo_pol"
+                android:layout_alignParentBottom="true"
+                android:background="@color/greyish_brown"/>
+
+            <LinearLayout
+                android:id="@+id/lo_pod"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/vw_route_seprator"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pod_cd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/pod_cd_hint"
+                    style="@style/txt_opensans_b_20_greyishbrown"/>
+                <TextView
+                    android:id="@+id/tv_pod_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/pod_count_hint"
+                    style="@style/txt_opensans_b_11_greyishbrown"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_weeks"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/lo_pod"
+                android:layout_alignParentEnd="true"
+                android:gravity="end|center_vertical"
+                android:text="@string/period_hint"
+                android:textColor="@color/color_bfbfbf"
+                style="@style/txt_opensans_b_13_greyishbrown"/>
+        </RelativeLayout>
+
+        <!-- 하단: 상세 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pol_name"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:gravity="start|center_vertical"
+                android:text="@string/pol_name_hint"
+                style="@style/txt_opensans_r_11_bfbfbf"/>
+
+            <View
+                android:id="@+id/vw_route_name_seprator"
+                android:layout_width="15dp"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@+id/tv_pol_name"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/tv_pod_name"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/vw_route_name_seprator"
+                android:layout_marginStart="12dp"
+                android:gravity="center_vertical"
+                android:text="@string/pod_name_hint"
+                style="@style/txt_opensans_r_11_bfbfbf"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/whole_image"
+                android:visibility="invisible"
+                android:src="@drawable/ic_whole_l"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.buyoffer.BofNewOfferAct"
+    tools:showIn="@layout/act_bof_newoffer"
+    android:background="@color/pale_gray">
+
+    <!-- background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/pale_gray">
+        <LinearLayout
+            android:id="@+id/ll_newoffer_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_splash_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_new_buy_offer_img" />
+            <Button
+                android:id="@+id/btn_new_offer"
+                android:layout_width="176dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="23dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_rectangle_blue_border"
+                android:text="@string/selloffer_create"
+                style="@style/txt_opensans_eb_14_white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_newoffer_draft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@color/pale_gray"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/your_offers_status_draft"
+                style="@style/txt_opensans_eb_25_greyishbrown"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_draft_offer_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:elevation="0dp"
+                android:background="@color/pale_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

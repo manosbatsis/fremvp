@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/appbar_bof_pod"/>
+
+	<!-- body -->
+	<include layout="@layout/body_bof_pod"/>
+
+	<!-- bottom button -->
+	<Button
+		android:id="@+id/btn_pod_next"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_gravity="center|bottom"
+		android:gravity="center"
+        android:textAllCaps="true"
+		android:visibility="visible"
+		android:enabled="false"
+		android:text="@string/select"
+		android:background="@drawable/selector_button_bottom"
+		style="@style/txt_opensans_eb_16_white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

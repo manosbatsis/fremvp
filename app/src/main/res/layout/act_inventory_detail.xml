@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_inventory_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/pale_gray"
+    tools:context=".ui.inventory.InventoryDetailActivity">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/appbar_inventory_detail"/>
+	<include layout="@layout/body_inventory_detail"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginTop="24dp"
+		android:layout_gravity="bottom"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btn_inventory_detail_make_sell_offer"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/button_bottom_enable_disable"
+			android:gravity="center"
+			android:visibility="visible"
+			android:textAllCaps="true"
+			android:text="@string/make_sell_offer"
+			style="@style/txt_opensans_eb_16_white"/>
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

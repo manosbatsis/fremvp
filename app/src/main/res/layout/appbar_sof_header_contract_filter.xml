@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    android:background="@color/title_bar">
+
+
+    <!--filter layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/title_bar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical">
+            <Button
+                android:id="@+id/btn_market_filter_carrier"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                style="@style/txt_opensans_r_12_white"
+                android:textAllCaps="false"
+                android:background="@drawable/selector_button_market_filter"
+                android:paddingHorizontal="10dp"
+                android:text="@string/carrier_all"
+                android:minWidth="40dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical">
+            <Button
+                android:id="@+id/btn_market_filter_container"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                style="@style/txt_opensans_r_12_white"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:background="@drawable/selector_button_market_filter"
+                android:paddingHorizontal="10dp"
+                android:minWidth="40dp"
+                android:text="YY Dry"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical">
+            <Button
+                android:id="@+id/btn_market_filter_ppd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                style="@style/txt_opensans_r_12_white"
+                android:textAllCaps="false"
+                android:background="@drawable/selector_button_market_filter"
+                android:paddingHorizontal="10dp"
+                android:minWidth="40dp"
+                android:text="PPD (30%)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_filter_default_d"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

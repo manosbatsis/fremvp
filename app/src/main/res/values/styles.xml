@@ -1,0 +1,916 @@
+<resources>
+
+    <style name="CardViewStyle" parent="CardView">
+		<item name="cardCornerRadius">8dp</item>
+		<item name="cardElevation">3dp</item>
+		<item name="cardBackgroundColor">@color/colorWhite</item>
+	</style>
+
+	<style name="CardViewStyleBlack" parent="CardView">
+		<item name="cardCornerRadius">8dp</item>
+		<item name="cardElevation">3dp</item>
+		<item name="cardBackgroundColor">@color/black</item>
+	</style>
+
+	<style name="CardViewStyle_black_two" parent="CardViewStyle">
+		<item name="cardBackgroundColor">@color/color_0d0d0d</item>
+	</style>
+
+	<style name="CardViewStyleFab" parent="CardView">
+		<item name="cardCornerRadius">25dp</item>
+		<item name="cardElevation">3dp</item>
+		<item name="cardBackgroundColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="FullScreenDialogStyle" parent="android:Theme">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowIsFloating">false</item>
+	</style>
+
+	<!-- Date Picker -->
+	<style name="DatePickerBottomDialog" parent="android:Theme.Light">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+	<style name="DatePickerDialogAnim" mce_bogus="1" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/datepicker_dialog_in</item>
+		<item name="android:windowExitAnimation">@anim/datepicker_dialog_out</item>
+	</style>
+
+	<!-- For Tool tip -->
+	<style name="ToolTipLayoutDefaultStyle">
+		<item name="ttlm_padding_top_bottom">@dimen/ttlm_default_padding_top_bottom</item>
+		<item name="ttlm_padding_left_right">@dimen/ttlm_default_padding_left_right</item>
+		<item name="ttlm_arrow_padding">@dimen/ttlm_default_arrow_padding</item>
+		<item name="ttlm_strokeColor">@android:color/transparent</item>
+		<item name="ttlm_backgroundColor">@color/color_1a1a1a</item>
+		<item name="ttlm_strokeWeight">@dimen/ttlm_default_stroke_weight</item>
+		<item name="ttlm_cornerRadius">@dimen/ttlm_default_corner_radius</item>
+		<item name="ttlm_arrowRatio">1.4</item>
+		<item name="ttlm_overlayStyle">@style/ToolTipOverlayDefaultStyle</item>
+		<item name="ttlm_animationStyle">@style/ToolTipAnimation</item>
+		<item name="ttlm_textStyle">@style/ToolTipTextStyle</item>
+	</style>
+	<!-- For Tool tip -->
+	<style name="ToolTipTextStyle" parent="txt_opensans_r_10_verylightpink">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:autoLink">all</item>
+		<item name="android:linksClickable">true</item>
+		<item name="android:gravity">start|top</item>
+		<item name="android:elevation">@dimen/ttlm_default_elevation</item>
+		<item name="android:translationZ">@dimen/ttlm_default_elevation</item>
+	</style>
+	<!-- For Tool tip -->
+	<style name="ToolTipOverlayDefaultStyle">
+		<item name="android:color">?attr/colorAccent</item>
+		<item name="ttlm_repeatCount">99</item>
+		<item name="ttlm_duration">600</item>
+		<item name="android:alpha">0.5</item>
+		<item name="android:layout_margin">8dp</item>
+	</style>
+	<!-- For Tool tip -->
+	<style name="ToolTipAnimation">
+		<item name="android:windowEnterAnimation">@anim/ttlm_tooltip_anim_enter</item>
+		<item name="android:windowExitAnimation">@anim/ttlm_tooltip_anim_exit</item>
+	</style>
+
+	<!-- ****************************** -->
+	<!-- Text styles : Significant Font -->
+	<style name="OpensansBold">
+		<item name="android:fontFamily">@font/opensans_bold</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+    <style name="OpensansBoldSemi">
+		<item name="android:fontFamily">@font/opensans_semibold</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+	<style name="OpensansBoldExtra">
+		<item name="android:fontFamily">@font/opensans_extrabold</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+    <style name="OpensansRegular">
+		<item name="android:fontFamily">@font/opensans_regular</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+    <style name="OpensansLight">
+		<item name="android:fontFamily">@font/opensans_light</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+    <style name="HelveticaRegular">
+		<item name="android:fontFamily">@font/helvetica</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+	<style name="RobotoMonoMedium">
+		<item name="android:fontFamily">@font/robotomono_medium</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+	<!-- ************************************* -->
+	<!-- Text styles : Significant Size, Color -->
+
+    <style name="txt_opensans_eb_40_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">40dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_25_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">25dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_25_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">25dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_25_4c4c4c" parent="OpensansBoldExtra">
+		<item name="android:textSize">25dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_eb_22_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">22dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_26_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">26dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_24_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">24dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_21_black" parent="OpensansBoldExtra">
+		<item name="android:textSize">21dp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="txt_opensans_eb_21_1a1a1a" parent="OpensansBoldExtra">
+		<item name="android:textSize">21dp</item>
+		<item name="android:textColor">@color/color_1a1a1a</item>
+	</style>
+
+	<style name="txt_opensans_eb_20_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_20_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_20_595959" parent="OpensansBoldExtra">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_eb_20_verilightpink" parent="OpensansBoldExtra">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_eb_19_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">19dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_18_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_18_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_18_4c4c4c" parent="OpensansBoldExtra">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_eb_18_bfbfbf" parent="OpensansBoldExtra">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_eb_16_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_16_verylightpink" parent="OpensansBoldExtra">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_eb_16_767676" parent="OpensansBoldExtra">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_767676</item>
+	</style>
+
+	<style name="txt_opensans_eb_15_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_eb_13_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_13_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+	<style name="txt_opensans_eb_13_141414" parent="OpensansBoldExtra">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_141414</item>
+	</style>
+
+	<style name="txt_opensans_eb_13_4c4c4c" parent="OpensansBoldExtra">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_eb_13_595959" parent="OpensansBoldExtra">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_eb_13_bfbfbf" parent="OpensansBoldExtra">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_eb_11_4c4c4c" parent="OpensansBoldExtra">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_eb_11_bfbfbf" parent="OpensansBoldExtra">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_eb_10_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_10_black_two" parent="OpensansBoldExtra">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_0d0d0d</item>
+	</style>
+
+	<style name="txt_opensans_eb_8_greyishbrown" parent="OpensansBoldExtra">
+		<item name="android:textSize">8dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_eb_16_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_eb_15_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_b_30_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">30dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_b_26_white" parent="OpensansBold">
+		<item name="android:textSize">26dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_b_25_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">25dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_b_21_white" parent="OpensansBold">
+		<item name="android:textSize">21dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_b_21_515151" parent="OpensansBold">
+		<item name="android:textSize">21dp</item>
+		<item name="android:textColor">@color/color_515151</item>
+	</style>
+
+	<style name="txt_opensans_b_23_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">23dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+    <style name="txt_opensans_b_20_white" parent="OpensansBold">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_b_20_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_b_18_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_b_18_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+    <style name="txt_opensans_b_18_black" parent="OpensansBold">
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="txt_opensans_b_17_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">17dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_b_16_595959" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_b_16_4a00e0" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_4a00e0</item>
+	</style>
+	<style name="txt_opensans_b_16_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_b_16_white" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_b_16_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_b_16_verylightpink" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+    <style name="txt_opensans_b_16_black" parent="OpensansBold">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+    <style name="txt_opensans_b_15_565656" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_565656</item>
+	</style>
+
+	<style name="txt_opensans_b_15_595959" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+    <style name="txt_opensans_b_15_white" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_b_15_4a00e0" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_4a00e0</item>
+	</style>
+
+	<style name="txt_opensans_b_15_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_b_15_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_b_15_bfbfbf" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_b_15_blue_violet" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/blue_violet</item>
+	</style>
+
+    <style name="txt_opensans_b_13_blue_violet" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/blue_violet</item>
+	</style>
+
+	<style name="txt_opensans_b_15_6f5ce7" parent="OpensansBold">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_6f5ce7</item>
+	</style>
+
+    <style name="txt_opensans_eb_14_white" parent="OpensansBoldExtra">
+		<item name="android:textSize">14dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_b_14_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">14dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_b_14_737373" parent="OpensansBold">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/color_737373</item>
+    </style>
+
+    <style name="txt_opensans_b_13_black" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="txt_opensans_b_13_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_b_13_edittext_input" parent="OpensansBold">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/edittext_input</item>
+    </style>
+
+	<style name="txt_opensans_b_13_1a1a1a" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_1a1a1a</item>
+	</style>
+
+    <style name="txt_opensans_b_13_333333" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_333333</item>
+	</style>
+
+	<style name="txt_opensans_b_13_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_b_13_979797" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_979797</item>
+	</style>
+
+	<style name="txt_opensans_b_13_purpleyblue" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/purpley_blue</item>
+	</style>
+
+	<style name="txt_opensans_b_13_white" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_b_13_bfbfbf" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_b_13_blueviolet" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/blue_violet</item>
+	</style>
+
+    <style name="txt_opensans_b_13_verylightpink" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_b_13_greenblue" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/green_blue</item>
+	</style>
+
+	<style name="txt_opensans_b_13_737373" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+    <style name="txt_opensans_b_11_greyishbrown" parent="OpensansBold">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_b_11_bfbfbf" parent="OpensansBold">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_b_11_blueviolet" parent="OpensansBold">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/blue_violet</item>
+	</style>
+
+	<style name="txt_opensans_b_11_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_b_11_737373" parent="OpensansBold">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+	<style name="txt_opensans_b_11_verylightpink" parent="OpensansBold">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+    <style name="txt_opensans_b_10_959595" parent="OpensansBold">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_959595</item>
+	</style>
+
+	<style name="txt_opensans_b_10_4c4c4c" parent="OpensansBold">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_b_10_595959" parent="OpensansBold">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_b_10_white" parent="OpensansBold">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_b_13_c7c7c7" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_c7c7c7</item>
+	</style>
+
+	<style name="txt_opensans_b_13_595959" parent="OpensansBold">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_r_10_595959" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+    <style name="txt_opensans_r_13_7b7b7b" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_7b7b7b</item>
+	</style>
+
+    <style name="txt_opensans_r_13_595959" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_r_13_greenblue" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/green_blue</item>
+	</style>
+
+    <style name="txt_opensans_semib_13_greyishbrown" parent="OpensansBoldSemi">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_r_16_333333" parent="OpensansRegular">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_333333</item>
+	</style>
+
+	<style name="txt_opensans_r_16_bfbfbf" parent="OpensansRegular">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_r_16_greyishbrown" parent="OpensansRegular">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_r_16_737373" parent="OpensansRegular">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+    <style name="txt_opensans_r_16_purpley_blue" parent="OpensansRegular">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/purpley_blue</item>
+	</style>
+
+	<style name="txt_opensans_l_15_greyishbrown" parent="OpensansLight">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_r_15_greyishbrown" parent="OpensansRegular">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_r_15_595959" parent="OpensansRegular">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_595959</item>
+	</style>
+
+	<style name="txt_opensans_r_15_ffffff" parent="OpensansRegular">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/colorWhite</item>
+	</style>
+
+	<style name="txt_opensans_r_15_verylightpink" parent="OpensansRegular">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_r_15_737373" parent="OpensansRegular">
+		<item name="android:textSize">15dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+	<style name="txt_opensans_r_14_greyishbrown" parent="OpensansRegular">
+		<item name="android:textSize">14dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_r_13_4a00e0" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_4a00e0</item>
+	</style>
+
+	<style name="txt_opensans_r_13_white" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_l_13_white" parent="OpensansLight">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_r_13_9b9b9b" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_9b9b9b</item>
+	</style>
+
+	<style name="txt_opensans_r_13_737373" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+	<style name="txt_opensans_r_13_bfbfbf" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_r_13_4c4c4c" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_r_13_c7c7c7" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_c7c7c7</item>
+	</style>
+
+	<style name="txt_opensans_r_13_verylightpink" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_r_12_white" parent="OpensansRegular">
+		<item name="android:textSize">12dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_r_11_greyishbrown" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_r_10_verylightpink" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_r_10_greyishbrown" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_r_10_greenblue" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/green_blue</item>
+	</style>
+
+	<style name="txt_opensans_r_10_white" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_r_10_737373" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+
+    <style name="txt_helvetica_r_20_greyishbrown" parent="HelveticaRegular">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_helvetica_r_16_verylightpink" parent="HelveticaRegular">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+    <style name="txt_opensans_r_10_bfbfbf" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+    <style name="txt_opensans_r_13_767676" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_767676</item>
+	</style>
+
+	<style name="txt_opensans_r_10_3bd090" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_3bd090</item>
+	</style>
+
+	<style name="txt_opensans_r_10_ffa241" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_ffa241</item>
+	</style>
+
+	<style name="txt_opensans_r_10_ff4444" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_ff4444</item>
+	</style>
+
+	<style name="txt_opensans_r_10_333333" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_333333</item>
+	</style>
+
+	<style name="txt_opensans_r_10_8b8b8b" parent="OpensansRegular">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_8b8b8b</item>
+	</style>
+
+    <style name="txt_opensans_r_11_verylightpink" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/very_light_pink</item>
+	</style>
+
+	<style name="txt_opensans_r_11_4c4c4c" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+	<style name="txt_opensans_r_11_777777" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_777777</item>
+	</style>
+
+	<style name="txt_opensans_r_11_737373" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+	<style name="txt_opensans_r_11_848484" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_848484</item>
+	</style>
+
+	<style name="txt_opensans_r_11_979797" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_979797</item>
+	</style>
+
+	<style name="txt_opensans_r_11_bfbfbf" parent="OpensansRegular">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/color_bfbfbf</item>
+	</style>
+
+	<style name="txt_opensans_r_13_greyishbrown" parent="OpensansRegular">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+	<style name="txt_opensans_l_19_white" parent="OpensansLight">
+		<item name="android:textSize">19dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_l_11_greyishbrown" parent="OpensansLight">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_l_13_greyishbrown" parent="OpensansLight">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/greyish_brown</item>
+	</style>
+
+    <style name="txt_opensans_l_13_aaaaaa" parent="OpensansLight">
+		<item name="android:textSize">13dp</item>
+		<item name="android:textColor">@color/color_aaaaaa</item>
+	</style>
+
+	<style name="txt_opensans_l_11_white" parent="OpensansLight">
+		<item name="android:textSize">11dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+    <style name="txt_opensans_l_10_737373" parent="OpensansLight">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_737373</item>
+	</style>
+
+	<style name="txt_opensans_l_10_white" parent="OpensansLight">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="txt_opensans_l_10_black" parent="OpensansLight">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+	<style name="txt_robotomono_m_10_4c4c4c" parent="RobotoMonoMedium">
+		<item name="android:textSize">10dp</item>
+		<item name="android:textColor">@color/color_4c4c4c</item>
+	</style>
+
+
+
+    <style name="btn_switch" parent="Theme.AppCompat.Light">
+		<item name="android:thumb">@drawable/selector_switch_thumb</item>
+		<item name="track">@drawable/selector_switch_track</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="btn_switch_l" parent="Theme.AppCompat.Light">
+		<item name="android:thumb">@drawable/selector_switch_thumb_l</item>
+		<item name="track">@drawable/selector_switch_track_l</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="TranslucentBase" parent="Theme.AppCompat.NoActionBar">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+
+	<style name="Theme.AppCompat.Translucent" parent="TranslucentBase">
+		<item name="android:backgroundDimAmount">0.9</item>
+	</style>
+
+	<style name="Theme.AppCompat.Translucent_80" parent="TranslucentBase">
+		<item name="android:backgroundDimAmount">0.8</item>
+	</style>
+
+	<style name="Theme.AppCompat.Translucent_61" parent="TranslucentBase">
+		<item name="android:backgroundDimAmount">0.61</item>
+	</style>
+
+	<style name="RouteSearch.TabText" parent="@android:style/TextAppearance.Widget.TabWidget">
+		<item name="android:fontFamily">@font/opensans_regular</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+</resources>
+

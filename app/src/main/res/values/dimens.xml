@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Common -->
+    <dimen name="default_title_height">56dp</dimen>
+
+    <!-- Bottom Navigation View -->
+
+    <!-- Button Round -->
+
+    <!-- Item List -->
+
+    <!-- table sheet -->
+
+    <!-- For Calendar -->
+    <dimen name="customizable_calendar_height">240dp</dimen>
+
+    <!-- For Tool tip -->
+    <dimen name="ttlm_default_padding_top_bottom">10dip</dimen>
+    <dimen name="ttlm_default_padding_left_right">15dip</dimen>
+    <dimen name="ttlm_default_arrow_padding">10dip</dimen>
+    <dimen name="ttlm_default_corner_radius">6dip</dimen>
+    <dimen name="ttlm_default_stroke_weight">0dip</dimen>
+    <dimen name="ttlm_default_elevation">3dp</dimen>
+
+    <!-- Menu -->
+
+    <!-- split -->
+    <dimen name="split_min_height">35dp</dimen>
+    <!-- title(56dp) + 80dp -->
+    <!-- title(56dp) + 35dp -->
+    <dimen name="split_peek_height_min">91dp</dimen>
+    <!-- title(56dp) + 80dp -->
+
+    <!-- route grid -->
+    <dimen name="route_grid_item_margine">3dp</dimen>
+
+    <!-- FAB -->
+    <dimen name="design_fab_size_normal" tools:override="true">50dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">50dp</dimen>
+    <dimen name="design_fab_elevation" tools:override="true">3dp</dimen>
+
+    <!-- rangebar -->
+    <dimen name="default_active_tick_radius">5dp</dimen>
+    <dimen name="custom_active_tick_radius">3dp</dimen>
+
+    <!-- Date Picker -->
+    <dimen name="WheelItemTextSize">16dp</dimen>
+    <dimen name="WheelSelectedItemTextSize">16dp</dimen>
+    <dimen name="WheelItemSpace">12dp</dimen>
+    <dimen name="WheelIndicatorSize">0dp</dimen>
+    <dimen name="WheelMargins">8dp</dimen>
+    <dimen name="WheelItemHeightSpace">16dp</dimen>
+    <dimen name="WheelItemWidthSpace">32dp</dimen>
+
+</resources>

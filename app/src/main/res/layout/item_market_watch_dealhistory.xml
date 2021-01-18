@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="98dp"
+            android:layout_height="28dp"
+            style="@style/txt_opensans_r_13_bfbfbf"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/bg_round_corner_14_greyishbrown_left_right"
+            android:text="2020-01-01"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_deal_date"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="18:00:00"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_deal_price"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="64dp"
+            android:gravity="end|center_vertical"
+            android:text="$1,000.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/v_deal_normal"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="9dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_deal_price_diff"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/v_deal_up_down"
+            android:layout_width="10dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_up_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_deal_price_diff"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_deal_price_diff"
+            style="@style/txt_opensans_r_13_greenblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_deal_teu"
+            style="@style/txt_opensans_b_13_bfbfbf"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:gravity="end|center_vertical"
+            android:text="100T"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_deal_price"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

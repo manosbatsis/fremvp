@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_body_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.sellorder.SellOrderActivity"
+    tools:showIn="@layout/act_sell_order">
+
+    <!-- background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="72dp"
+        android:background="@color/pale_gray">
+
+        <!-- market chart > Bid (Buy Offer) / View Pager-->
+        <include layout="@layout/body_order_sell_has_contract" />
+
+        <!-- View Pager / market chart > Bid (Buy Offer)-->
+        <!--<include layout="@layout/body_order_sell_detail_contract" android:id="@+id/body_order_sell_detail_contract"/>-->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pale_gray">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_your_offers_swipe_preview_body_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="68dp"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <include layout="@layout/body_pol_pod_card_simple"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/CardViewStyle"
+                tools:ignore="ContentDescription">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <!-- list view title -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_title_period"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical|start"
+                                style="@style/txt_opensans_b_11_greyishbrown"
+                                android:text="@string/volume_period"/>
+                            <TextView
+                                android:id="@+id/tv_title_price"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|end"
+                                style="@style/txt_opensans_b_11_greyishbrown"
+                                android:text="@string/price_t"/>
+                            <TextView
+                                android:id="@+id/tv_title_dealt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.1"
+                                android:gravity="center_vertical|end"
+                                style="@style/txt_opensans_b_11_greyishbrown"
+                                android:text="@string/dealt"/>
+                            <TextView
+                                android:id="@+id/tv_title_left"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.1"
+                                android:gravity="center_vertical|end"
+                                style="@style/txt_opensans_b_11_greyishbrown"
+                                android:text="@string/left"/>
+                            <TextView
+                                android:id="@+id/tv_title_value"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.2"
+                                android:gravity="center_vertical|end"
+                                style="@style/txt_opensans_b_11_greyishbrown"
+                                android:text="@string/cost_value"/>
+                        </LinearLayout>
+
+                        <!-- recycler view -->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:clipToPadding="false"
+                            android:orientation="vertical"
+                            android:overScrollMode="never"
+                            android:elevation="0dp"
+                            android:padding="0dp"
+                            android:background="@color/white"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_f2f2f2"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_bottom_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical|end"
+                                style="@style/txt_opensans_b_16_greyishbrown"
+                                android:text="@string/volume_sum"/>
+                            <ImageView
+                                android:id="@+id/iv_sum_mark"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/ic_information_white"
+                                android:visibility="gone"/>
+                            <TextView
+                                android:id="@+id/tv_bottom_value"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|end"
+                                style="@style/txt_opensans_b_16_greyishbrown"
+                                android:text="$0"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_whole_deal_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="0dp"
+                android:background="@color/pale_gray"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_whole_deal_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offer_whole_deal_options"
+                        style="@style/txt_opensans_b_15_greyishbrown"/>
+                    <ImageView
+                        android:id="@+id/iv_check_mark"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_information_white"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whole_deal_option_selected_desc"
+                    style="@style/txt_opensans_r_11_greyishbrown"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_view_detail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/selector_button_bottom"
+        style="@style/txt_opensans_eb_16_white"
+        android:text="@string/your_inventory_contract_preview_view_detail"
+        android:textAllCaps="true"/>
+
+</RelativeLayout>

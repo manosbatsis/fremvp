@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="56dp"
+    android:layout_width="wrap_content"
+    android:background="@color/title_bar"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/ll_pod"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_round_corner_8_purpley_blue">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_podCd"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="KRPUS"
+                style="@style/txt_opensans_eb_16_white"/>
+            <TextView
+                android:id="@+id/tv_podNm"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="Busan, South Korea"
+                style="@style/txt_opensans_l_11_white"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_pod_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_x_default_thin"/>
+    </LinearLayout>
+</LinearLayout>

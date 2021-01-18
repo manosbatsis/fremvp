@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom_btn_floating"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:visibility="visible">
+    <Button
+        android:id="@+id/btn_order_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_bottom_enable_disable"
+        android:gravity="center"
+        android:visibility="gone"
+        android:enabled="false"
+        android:text="@string/select"
+        style="@style/txt_opensans_eb_16_white"/>
+    <Button
+        android:id="@+id/btn_order_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_bottom_enable_disable"
+        android:gravity="center"
+        android:visibility="gone"
+        android:enabled="false"
+        android:text="@string/confirm"
+        style="@style/txt_opensans_eb_16_white"/>
+    <Button
+        android:id="@+id/btn_order_make"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_bottom_enable_disable"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/make_sell_order"
+        style="@style/txt_opensans_eb_16_white"/>
+</LinearLayout>

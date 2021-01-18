@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:fitsSystemWindows="false"
+    android:background="@color/pale_gray"
+    android:orientation="vertical"
+    tools:context=".ui.sellorder.SellOrderActivity">
+
+    <!-- market chart > Bid (Buy Offer) > mPol, mPod -->
+    <include layout="@layout/body_pol_pod_card" />
+
+    <!-- Select -->
+    <include layout="@layout/body_order_new_sell_select_layout"
+        android:id="@+id/body_order_new_sell_select_layout"
+        android:visibility="invisible"/>
+
+    <!-- Confirm -->
+    <include layout="@layout/body_order_new_sell_confirm_layout"
+        android:id="@+id/body_order_new_sell_confirm_layout"
+        android:visibility="gone"/>
+
+    <!-- Make New Sell -->
+    <include layout="@layout/body_order_new_sell_make_layout"
+        android:id="@+id/body_order_new_sell_make_layout"
+        android:visibility="gone"/>
+
+</LinearLayout>

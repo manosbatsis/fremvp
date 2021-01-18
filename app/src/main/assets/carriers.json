@@ -1,0 +1,47 @@
+[
+  {
+    "offerCarrierCode": "ONE",
+    "offerCarrierName": "Ocean Network Express",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "MSC",
+    "offerCarrierName": "Mediterranean Shipping Company",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "CMA",
+    "offerCarrierName": "CMA-CGM",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "HMM",
+    "offerCarrierName": "Hyundai",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "PIL",
+    "offerCarrierName": "Pacific International Line",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "OCL",
+    "offerCarrierName": "Overseas Containers Limited",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "YML",
+    "offerCarrierName": "Yangming",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "F09",
+    "offerCarrierName": "Freight9",
+    "isChecked": true
+  },
+  {
+    "offerCarrierCode": "ISL",
+    "offerCarrierName": "Islamic Republic of Iran Shipping Line",
+    "isChecked": true
+  }
+]

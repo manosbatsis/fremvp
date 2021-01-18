@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <HorizontalScrollView
+        android:id="@+id/hlv_por"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:padding="0dp"
+        >
+        <LinearLayout
+            android:id="@+id/ll_category_por"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="37dp"/>
+    <HorizontalScrollView
+        android:id="@+id/hlv_pol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:padding="0dp"
+        >
+        <LinearLayout
+            android:id="@+id/ll_category_pol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+    <!--    center  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_center_port"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_grid_oceanfreight"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hlv_pod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:padding="0dp"
+        >
+        <LinearLayout
+            android:id="@+id/ll_category_pod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="37dp"/>
+    <HorizontalScrollView
+        android:id="@+id/hlv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:padding="0dp"
+        >
+        <LinearLayout
+            android:id="@+id/ll_category_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        </HorizontalScrollView>
+</LinearLayout>

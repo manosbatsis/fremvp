@@ -1,0 +1,911 @@
+<resources>
+	<string name="app_name">Freight9</string>
+	<string name="loading">loading</string>
+	<string name="loading_port_mdm">Fetching Port MDM data</string>
+	<string name="loading_schedule">Updating latest schedule</string>
+	<string name="act_buy_order">Buy Order</string>
+	<string name="act_sell_order">Sell Order</string>
+	<string name="detail_condition"><u>condition detail</u></string>
+	<string name="whole_route"><u>whole route</u></string>
+	<string name="price_table"><u>price table</u></string>
+	<string name="counter_offers">Counter Offers</string>
+	<string name="batch_input">Batch Input</string>
+	<string name="volume_title">Volume (T)</string>
+    <string name="volume_batch_input">Batch Input</string>
+	<string name="price_batch_input">Batch Input</string>
+    <string name="volume_batch_input_max">Max</string>
+	<string name="volume_period">Period</string>
+	<string name="volume_price">Price</string>
+	<string name="volume_price_unit">Price(/%s)</string>
+	<string name="volume_bid_price">Bid Price</string>
+	<string name="volume_volume">Volume</string>
+	<string name="volume_volume_unit">Volume(%s)</string>
+	<string name="volume_bid_volume">Bid Volume</string>
+	<string name="volume_your_inventory">Your Inventory</string>
+	<string name="volume_subtotal">Sub Total</string>
+	<string name="volume_sum">SUM</string>
+	<string name="volume_deal_amount">Total Deal Amount</string>
+	<string name="volume_deal_amount_desc_simple">ⓐ</string>
+    <string name="volume_deal_payment_transaction">Initial Transaction</string>
+    <string name="volume_deal_payment_payable_desc_simple">ⓑ</string>
+	<string name="volume_deal_payment_payable_desc">= %d%% of ⓐ</string>
+	<string name="volume_deal_available_account_budget">Available Account Budget</string>
+	<string name="volume_deal_available_account_budget_desc_simple">ⓒ</string>
+    <string name="volume_deal_amount_balance">EXPECTED BALANCE</string>
+	<string name="volume_deal_amount_balance_desc">= ⓒ - ⓑ</string>
+	<string name="buy_order_terms_title">Terms and Conditions</string>
+	<string name="buy_order_terms_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu maximus turpis. Suspendisse vulputate tortor interdum, placerat eros quis, tempor nibh. Mauris a congue leo. Suspendisse ac diam ac odio posuere blandit et sed sem. Cras placerat augue eget odio fringilla, a fermentum neque tempus. Donec viverra convallis purus. Praesent blandit augue congue blandit imperdiet. Fusce ut fermentum quam. Sed eros orci, auctor at laoreet id, pretium sed ante. Cras a diam sit amet metus vehicula porttitor vitae at nisl. Morbi fringilla tortor eu neque blandit, ac sollicitudin ligula dictum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu maximus turpis. Suspendisse vulputate tortor interdum, placerat eros quis, tempor nibh. Mauris a congue leo. Suspendisse ac diam ac odio posuere blandit et sed sem. Cras placerat augue eget odio fringilla, a fermentum neque tempus. Donec viverra convallis purus. Praesent blandit augue congue blandit imperdiet. Fusce ut fermentum quam. Sed eros orci, auctor at laoreet id, pretium sed ante. Cras a diam sit amet metus vehicula porttitor vitae at nisl. Morbi fringilla tortor eu neque blandit, ac sollicitudin ligula dictum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu maximus turpis. Suspendisse vulputate tortor interdum, placerat eros quis, tempor nibh. Mauris a congue leo. Suspendisse ac diam ac odio posuere blandit et sed sem. Cras placerat augue eget odio fringilla, a fermentum neque tempus. Donec viverra convallis purus. Praesent blandit augue congue blandit imperdiet. Fusce ut fermentum quam. Sed eros orci, auctor at laoreet id, pretium sed ante. Cras a diam sit amet metus vehicula porttitor vitae at nisl. Morbi fringilla tortor eu neque blandit, ac sollicitudin ligula dictum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu maximus turpis. Suspendisse vulputate tortor interdum, placerat eros quis, tempor nibh. Mauris a congue leo. Suspendisse ac diam ac odio posuere blandit et sed sem. Cras placerat augue eget odio fringilla, a fermentum neque tempus. Donec viverra convallis purus. Praesent blandit augue congue blandit imperdiet. Fusce ut fermentum quam. Sed eros orci, auctor at laoreet id, pretium sed ante. Cras a diam sit amet metus vehicula porttitor vitae at nisl. Morbi fringilla tortor eu neque blandit, ac sollicitudin ligula dictum.</string>
+	<string name="buy_order_term_agree">I agree to f9 terms and conditions.</string>
+	<string name="buy_order_period_volume">Period &amp; Volume</string>
+	<string name="buy_order_pay_plan">Pay Plan</string>
+	<string name="buy_order_initial_transaction">INITIAL TRANSACTION</string>
+    <string name="buy_order_initial_payment_payable_desc">Payable for the initial payment when the deal is made.</string>
+	<string name="buy_order_transaction_fee_desc">1% transaction fee will be charged for each deal amount at remainder &amp; balance period.</string>
+	<string name="buy_order_cancel_title">Are you sure ?</string>
+    <string name="buy_order_cancel_desc_only_order">Do you really cancel the order ?\nThis process can not be undone.</string>
+	<string name="buy_order_condition_popup_title">Condition</string>
+	<string name="buy_order_condition_popup_rd_term">Receive &amp; Delivery Term</string>
+    <string name="buy_order_condition_popup_container_type_size">Container Type &amp; Size</string>
+	<string name="buy_order_condition_popup_container_type">Container Type</string>
+	<string name="buy_order_condition_popup_pay_plan">Pay Plan</string>
+	<string name="buy_order_condition_popup_carrier">Carrier</string>
+	<string name="buy_order_condition_popup_operator">Operator</string>
+    <string name="buy_order_condition_popup_go_calendar_pay"><u>view pay plan on calendar</u></string>
+	<string name="buy_order_condition_popup_transaction_statement"><u>transaction statement</u></string>
+	<string name="buy_order_condition_popup_master_contract_no">Master Contract No.</string>
+	<string name="buy_order_pricetable_popup_title">Price Table</string>
+	<string name="buy_order_whole_route_popup_title">Route</string>
+	<string name="buy_order_whole_route_table">Table</string>
+	<string name="buy_order_whole_route_grid">Grid</string>
+    <string name="buy_order_whole_route_port">Port</string>
+	<string name="buy_order_whole_route_arrive">Arrive</string>
+	<string name="buy_order_whole_route_departure">Departure</string>
+	<string name="buy_order_whole_route_ocean_area">ocean area</string>
+	<string name="buy_order_payplan_popup_title">Collect Plan</string>
+	<string name="buy_order_payplan_pol">POL</string>
+	<string name="buy_order_payplan_pod">POD</string>
+	<string name="payplan_rate_initial">Initial</string>
+	<string name="payplan_rate_midterm">Mid Term</string>
+	<string name="payplan_rate_remainder">Remainder</string>
+	<string name="payplan_rate_display">%s%%</string>
+	<string name="payplan_rate_full_display">%1$s (%2$s%% - %3$s%% - %4$s%%)</string>
+	<string name="payplan_prepaid">Prepaid</string>
+	<string name="payplan_collect">Collect</string>
+	<string name="payplan_initial_payment_dealdate">Initial payment\nDeal Date</string>
+	<string name="buy_order_payplan_kind_prepaid_no_num">Prepaid Plan</string>
+    <string name="buy_order_payplan_kind_collect_no_num">Collect Plan</string>
+    <string name="buy_order_payplan_initial_payment_table_title_paydate">Pay Date</string>
+	<string name="buy_order_payplan_initial_payment_table_title_colllectdate">Collect Date</string>
+    <string name="buy_order_payplan_initial_payment_table_title_sum">Sum</string>
+    <string name="buy_order_payplan_initial_payment_table_value_2nd">%1$s\n%2$s</string>
+	<string name="buy_order_payplan_initial_payment_table_value_3rd">%1$s\n%2$s</string>
+    <string name="buy_order_no_contract_in_your_inventory">No Contract</string>
+	<string name="buy_order_no_contract_desc_in_your_inventory">in your inventory met the bid conditions</string>
+	<string name="buy_order_select_contract_from_your_inventory">Select a Contract from Your Inventory</string>
+	<string name="buy_order_select_new_buy_offer">Make a New Buy Offer Using This Condition</string>
+	<string name="buy_order_select_new_sell_offer">Make a New Sell Offer Using This Condition</string>
+    <string name="buy_order_contract_unit">T/Wk</string>
+	<string name="sell_order_collect_plan">Collect Plan</string>
+	<string name="sell_order_initial_payment_receivable_desc">Receivable for the initial payment when the deal is made.</string>
+
+	<string name="buy_offer_holding_deposit_title">HOLDING DEPOSIT</string>
+	<string name="buy_offer_holding_deposit_desc">Required to hold the initial payment amount. When your offer is dealt holding deposit will be used as initial payment.</string>
+
+	<string name="full_container">Dry Container</string>
+	<string name="empty_container">Empty Container</string>
+	<string name="soc_container">SOC Container</string>
+	<string name="rf_container">Reefer Container</string>
+
+	<string name="full_container_simple">Dry</string>
+	<string name="empty_container_simple">Empty</string>
+	<string name="soc_container_simple">SOC</string>
+	<string name="rf_container_simple">Reefer</string>
+	<string name="full_container_simple_abbrev">Dry</string>
+	<string name="empty_container_simple_abbrev">MTY</string>
+	<string name="soc_container_simple_abbrev">SOC</string>
+	<string name="rf_container_simple_abbrev">RF</string>
+
+    <string name="table_title_period">Period</string>
+	<string name="container_size_20">20 ft</string>
+	<string name="container_size_40">40 ft</string>
+    <string name="container_size_20_abbrev">20\'</string>
+	<string name="container_size_40_abbrev">40\'</string>
+	<string name="container_size_40hc_abbrev">40\'HC</string>
+	<string name="container_size_45hc_abbrev">45\'HC</string>
+
+	<string name="week_seq">W%s</string>
+	<string name="week_full_seq">Week %s</string>
+
+	<string name="your_inventory_title">Your Inventory</string>
+	<string name="your_inventory_offer_no">Offer No.</string>
+	<string name="your_inventory_f9_market_value">F9 Market Value</string>
+	<string name="your_inventory_market_value">Market Value</string>
+	<string name="your_inventory_f9_cost_value">F9 Cost Value</string>
+	<string name="your_inventory_cost_value">Cost Value</string>
+	<string name="your_inventory_total_cost_value">Total Cost Value</string>
+	<string name="your_inventory_unit_cost_value">Unit Cost Value</string>
+	<string name="your_inventory_estimated_profit">Estimated Profit</string>
+	<string name="your_inventory_last_minute_inventory">Last Minute Inventory</string>
+	<string name="your_inventory_in_stock">In-Stock</string>
+	<string name="your_inventory_on_market">on Market</string>
+	<string name="your_inventory_expired">Expired</string>
+	<string name="your_inventory_booked">Booked</string>
+	<string name="your_inventory_sold">Sold</string>
+	<string name="your_inventory_change">Inventory Change</string>
+	<string name="your_inventory_change_7days">7 days</string>
+	<string name="your_inventory_change_15days">15 days</string>
+	<string name="your_inventory_change_30days">30 days</string>
+	<string name="your_inventory_week_of">Week of</string>
+	<string name="your_inventory_total_owned">Total owned</string>
+	<string name="your_inventory_total_owned_value">%1$sT / %2$s cases</string>
+	<string name="your_inventory_btn_view_all_your_inventory">VIEW ALL YOUR INVENTORY</string>
+    <string name="route_filter_from">From</string>
+	<string name="route_filter_to">To</string>
+	<string name="route_filter_all">ALL</string>
+    <string name="route_filter_port_or_city">Port or City</string>
+
+	<string name="your_inventory_change_index_today">Today</string>
+	<string name="your_inventory_change_index_otherdays">%s ago</string>
+
+	<string name="your_inventory_detail_f9_market_value">F9 MARKET VALUE</string>
+	<string name="your_inventory_detail_total_cost_value">TOTAL COST VALUE</string>
+	<string name="your_inventory_detail_total_value">TOTAL VALUE</string>
+    <string name="your_inventory_detail_view_detail"><u>view detail</u></string>
+	<string name="your_inventory_detail_owned_total_only">Owned / Total</string>
+	<string name="your_inventory_detail_owned_total">(owned/total)</string>
+	<string name="your_inventory_detail_volume">Volume</string>
+	<string name="your_inventory_detail_owned_total_value">%1$s / %2$s</string>
+	<string name="your_inventory_booking_here">booking here</string>
+	<string name="your_inventory_next_step">select your next step</string>
+
+	<string name="your_inventory_contract_preview_01">01</string>
+	<string name="your_inventory_contract_preview_02">02</string>
+	<string name="your_inventory_contract_preview_view_detail">view detail</string>
+
+	<!-- In stock -->
+	<string name="your_inventory_next_new_sell_offer">NEW SELL OFFER</string>
+	<string name="your_inventory_next_new_booking">NEW BOOKING</string>
+
+	<!-- on market -->
+	<string name="your_inventory_next_your_sell_offer_list">YOUR SELL OFFER LIST</string>
+	<string name="your_inventory_next_your_buy_offer_list">YOUR BUY OFFER LIST</string>
+
+	<!-- Booked -->
+	<string name="your_inventory_next_booking_dashboard">BOOKING DASHBOARD</string>
+
+	<!-- Sold, Expired -->
+	<string name="your_inventory_next_transaction_statement">TRANSACTION STATEMENT</string>
+
+    <string name="your_inventory_hide_period_volume_hide">Hide</string>
+	<string name="your_inventory_hide_period_volume_0">&#160;0&#160;</string>
+	<string name="your_inventory_hide_period_volume_owned_volume">owned volume</string>
+
+	<string name="your_inventory_grid_condition">Condition</string>
+	<string name="your_inventory_valuation">Inventory Valuation</string>
+	<string name="your_inventory_valuation_usd_t">(USD/T)</string>
+	<string name="your_inventory_unit_teu">(Teu)</string>
+
+	<string name="container_full_20">Dry Container 20 ft</string>
+	<string name="container_rf_20">Reefer Container 20 ft</string>
+	<string name="container_empty_20">Empty Container 20 ft</string>
+	<string name="container_soc_20">SOC Container 20 ft</string>
+
+	<string name="container_full_40">Dry Container 40 ft</string>
+	<string name="container_rf_40">Reefer Container 40 ft</string>
+	<string name="container_empty_40">Empty Container 40 ft</string>
+	<string name="container_soc_40">SOC Container 40 ft</string>
+
+	<string name="container_full_40hc">Dry Container 40 ft High Cubic</string>
+	<string name="container_rf_40hc">Reefer Container 40 ft High Cubic</string>
+	<string name="container_empty_40hc">Empty Container 40 ft High Cubic</string>
+	<string name="container_soc_40hc">SOC Container 40 ft High Cubic</string>
+
+	<string name="container_full_45hc">Dry Container 45 ft High Cubic</string>
+	<string name="container_rf_45hc">Reefer Container 45 ft High Cubic</string>
+	<string name="container_empty_45hc">Empty Container 45 ft High Cubic</string>
+	<string name="container_soc_45hc">SOC Container 45 ft High Cubic</string>
+
+	<string name="container_full_name">Dry Container</string>
+	<string name="container_rf_name">Reefer Container</string>
+	<string name="container_empty_name">Empty Container</string>
+	<string name="container_soc_name">SOC Container</string>
+
+	<string name="container_full_middle_name">Dry</string>
+	<string name="container_rf_middle_name">Reefer</string>
+	<string name="container_empty_middle_name">Empty</string>
+	<string name="container_soc_middle_name">SOC</string>
+
+    <string name="container_dry_title">Dry Container</string>
+	<string name="container_reefer_title">Reefer Container</string>
+	<string name="container_empty_title">Empty Container</string>
+	<string name="container_soc_title">SOC Container</string>
+
+	<string name="teu_unit_20ft">T</string>
+	<string name="teu_unit_40ft">F</string>
+    <string name="teu_unit_kilo_t">kT</string>
+	<string name="teu_unit_kilo_f">kF</string>
+	<string name="teu_unit_mega_t">mT</string>
+	<string name="teu_unit_mega_f">mF</string>
+    <string name="teu_unit_kilo">k</string>
+    <string name="teu_unit_mega">m</string>
+	<string name="teu_unit_t">T</string>
+	<string name="teu_unit_f">F</string>
+
+    <string name="rd_term_title">Receive &amp; \nDelivery Term</string>
+	<string name="rd_term_type_cycy">CY - CY</string>
+	<string name="rd_term_type_cydoor">CY - Door</string>
+	<string name="rd_term_type_doorcy">Door - CY</string>
+	<string name="rd_term_type_doordoor">Door - Door</string>
+
+	<string name="rd_term_type_cycy_abbrev">YY</string>
+	<string name="rd_term_type_cydoor_abbrev">YD</string>
+	<string name="rd_term_type_doorcy_abbrev">DY</string>
+	<string name="rd_term_type_doordoor_abbrev">DD</string>
+
+	<string name="filter_carrier_title_carrier">Carrier</string>
+	<string name="filter_container_type_full">Dry</string>
+	<string name="filter_container_type_rf">Reefer</string>
+	<string name="filter_container_type_empty">Empty</string>
+	<string name="filter_container_type_soc">SOC</string>
+
+	<string name="filter_payment_type_title">Payment Type</string>
+	<string name="filter_payment_type_ppd">PPD</string>
+	<string name="filter_payment_type_cct">CCT</string>
+	<string name="filter_payment_type_ppd_prepaid">PPD (Prepaid)</string>
+	<string name="filter_payment_type_cct_collect">CCT (Collect)</string>
+	<string name="filter_payment_plan_title">Plan</string>
+
+    <string name="filter_container_title_rdterm">Receive &amp;\nDelivery Term</string>
+	<string name="filter_container_title_type">Container Type</string>
+	<string name="filter_container_title_size">Container Size</string>
+
+	<string name="menu_market_trade">MARKET &amp; TRADE</string>
+	<string name="menu_market">Trade Market</string>
+	<string name="menu_make_new_selloffer">Make a New Sell Offer</string>
+	<string name="menu_make_new_buyoffer">Make a New Buy Offer</string>
+	<string name="menu_your_freight9">YOUR FREIGHT9</string>
+	<string name="menu_your_inventory">Your Inventory</string>
+	<string name="menu_your_buy_offers">Your Buy Offers</string>
+	<string name="menu_your_sell_offers">Your Sell Offers</string>
+	<string name="menu_booking_dashboard">Booking Dashboard</string>
+	<string name="menu_cargo_tracking">Cargo Tracking</string>
+	<string name="menu_finance_pay_collect_plan">Pay/Collect Plan</string>
+	<string name="menu_finance_transaction_statement">Transaction Statement</string>
+	<string name="menu_finance_invoice">Invoice</string>
+	<string name="menu_bl_invoice">B/L &amp; Invoice</string>
+	<string name="menu_sign_out">Sign Out</string>
+
+	<string name="menu_message_box">Message Box</string>
+	<string name="menu_message_clearall"><u>Clear All</u></string>
+
+	<string name="carrier_all">All Carriers</string>
+	<string name="carrier">Carriers</string>
+    <string name="edit">EDIT</string>
+	<string name="edit2"><u>Edit</u></string>
+	<string name="more">more</string>
+	<string name="enter">enter</string>
+	<string name="popup_yes">YES</string>
+	<string name="popup_no">NO</string>
+	<string name="ok">OK</string>
+	<string name="cancel">CANCEL</string>
+	<string name="confirm">CONFIRM</string>
+	<string name="select">SELECT</string>
+	<string name="done">DONE</string>
+	<string name="next">NEXT</string>
+	<string name="skip">SKIP</string>
+	<string name="max">Max</string>
+	<string name="shortage_of_balance">SHORTAGE OF BALANCE</string>
+	<string name="make_buy_order">MAKE BUY ORDER</string>
+	<string name="make_sell_order">MAKE SELL ORDER</string>
+    <string name="split_market_live_deal_price">Live Deal Price</string>
+	<string name="split_market_deals_by_voyage_week">Deals by Voyage Week</string>
+	<string name="split_market_your_inventory">Your Inventory</string>
+	<string name="split_market_your_offers_on_market">Your Offers on Market</string>
+	<string name="split_market_all_offers_on_market">All bid/ask on market</string>
+	<string name="split_market_all_offers_tab_bid">Bid</string>
+	<string name="split_market_all_offers_tab_ask">Ask</string>
+	<string name="split_market_offers_view_peroid">View Period</string>
+    <string name="clear_all"><u>Clear All</u></string>
+	<string name="select_all"><u>Select All</u></string>
+	<string name="terms_and_conditions_title">Terms and conditions</string>
+	<string name="agree_terms_and_conditions">i agree to f9 terms and conditions.</string>
+	<string name="make_sell_offer">make a sell offer</string>
+	<string name="make_buy_offer">make a buy offer</string>
+	<string name="whole_deal_options">Whole Deal Options</string>
+	<string name="whole_deal_option_selected_desc">Selected: only sell the deal all together at once</string>
+	<string name="whole_deal_option_fee_desc">1% transaction fee will be charged for each deal amount at remainder &amp; balance period.</string>
+	<string name="view_collect_plan_on_calendar"><u>view collect plan on calendar</u></string>
+    <string name="market_split_prev_period">Period</string>
+	<string name="market_split_prev_price">Price(/T)</string>
+	<string name="market_split_prev_volume">Volume</string>
+	<string name="market_split_prev_value">Value</string>
+	<string name="market_want_buy">WANT TO BUY</string>
+	<string name="market_want_sell">WANT TO SELL</string>
+	<string name="market_popup_order_unavailable">Order Unavailable</string>
+	<string name="market_popup_order_unavailable_desc">This offer is submitted by yourself</string>
+	<string name="market_btn_this_is_your_offer">THIS IS YOUR OFFER</string>
+	<string name="market_stomp_on_air">on air</string>
+	<string name="market_stomp_disconn">disconnected</string>
+
+	<string name="route_tab_featured">Featured</string>
+	<string name="route_tab_porpol">POR/POL</string>
+	<string name="route_tab_poddel">POD/DEL</string>
+
+    <string name="sof_remainder_n_balance">Remainder &#38; Balance</string>
+	<string name="sof_midterm">Mid Term</string>
+	<string name="sof_initial_deal_date">Initial (Deal Date)</string>
+
+	<string name="bof_remainder_n_balance">Remainder &#38; Balance</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+	<string name="toDetail">Port or City</string>
+	<string name="all">ALL</string>
+	<string name="all_carriers">All Carriers</string>
+
+    <string name="serviceLane">Service Lane</string>
+	<string name="pols">POLs</string>
+	<string name="pods">PODs</string>
+
+	<string name="pods_sample_data">USLAX(Los Angeles, US)\nUSLAX(Los Angeles, US)\nUSLAX(Los Angeles, US)\nUSLAX(Los Angeles, US)\nUSLAX(Los Angeles, US)\nUSLAX(Los Angeles, US)</string>
+
+	<!-- finance -->
+	<string name="finance_search_hint_search_buyer_seller">&#160;search buyer/seller</string>
+	<string name="finance_search_hint_search_items">&#160;search items</string>
+	<string name="finance_search_hint_search_description">&#160;search description</string>
+	<string name="finance_search_hint_search_issuer">&#160;search issuer</string>
+
+	<string name="finance_search_type_items">items</string>
+	<string name="finance_search_type_description">description</string>
+
+	<string name="finance_filters">Filters</string>
+	<string name="finance_filters_date_deal">Deal</string>
+	<string name="finance_filters_date_due">Due</string>
+
+	<string name="finance_filters_route">Route</string>
+	<string name="finance_filters_route_pol">POL</string>
+	<string name="finance_filters_route_pol_all">All POLs</string>
+	<string name="finance_filters_route_pod">POD</string>
+	<string name="finance_filters_route_pod_all">All PODs</string>
+
+	<string name="finance_filter_status_collected">Collected</string>
+	<string name="finance_filter_status_uncollected">Uncollected</string>
+	<string name="finance_filter_status_collected_unconfirmed">Collected-UnConfirmed</string>
+
+	<string name="finance_filter_transaction_statement_type">Transaction Type</string>
+	<string name="finance_filter_transaction_statement_type_init">Initial Payment</string>
+	<string name="finance_filter_transaction_statement_type_mid">Mid Term Payment</string>
+	<string name="finance_filter_transaction_statement_type_remain">Remainder Payment</string>
+
+	<string name="finance_filter_transaction_statement_cases">Cases</string>
+	<string name="finance_filter_transaction_statement_cases_amount_in">Amount In</string>
+	<string name="finance_filter_transaction_statement_cases_amount_out">Amount Out</string>
+	<string name="finance_filter_transaction_statement_cases_space_in">Space In</string>
+	<string name="finance_filter_transaction_statement_cases_space_out">Space Out</string>
+
+	<string name="finance_filter_invoice_transaction_type">Transaction Type</string>
+	<string name="finance_filter_invoice_transaction_type_unpaid">Unpaid</string>
+	<string name="finance_filter_invoice_transaction_type_unconfirmed">Unconfirmed</string>
+
+	<string name="finance_filter_pay_collect_plan">Collect Plan</string>
+	<string name="finance_filter_pay_collect_plan_prepaid">Prepaid</string>
+	<string name="finance_filter_pay_collect_plan_collect">Collect</string>
+
+	<string name="finance_filters_clear_all"><u>Clear All</u></string>
+	<string name="finance_filters_select_all"><u>Select All</u></string>
+
+	<string name="finance_filter_pay_collect_status_bubble_all">All Status</string>
+	<string name="finance_filter_pay_collect_plan_bubble_all">All Plan</string>
+	<string name="finance_filter_transaction_type_bubble_all">All Type</string>
+	<string name="finance_filter_transaction_cases_bubble_all">All Cases</string>
+	<string name="finance_filter_invoice_type_bubble_all">All Type</string>
+	<string name="finance_filter_all_routes">ALL Route</string>
+	<string name="finance_filter_all_deal_date">ALL Deal Date</string>
+	<string name="finance_filter_all_due_date">ALL Due Date</string>
+
+	<string name="finance_time_symbol_etd">ETD</string>
+	<string name="finance_time_symbol_atd">ATD</string>
+	<string name="finance_time_symbol_eta">ETA</string>
+	<string name="finance_time_symbol_ata">ATA</string>
+
+	<!-- cargo tracking -->
+	<string name="cargo_tracking_search_hint">&#160;search number</string>
+	<string name="cargo_tracking_search_booking_no">Booking NO.</string>
+	<string name="cargo_tracking_search_bl_no">B/L (H.B/L, M.B/L) NO.</string>
+	<string name="cargo_tracking_search_vessel_no">Vessel &amp; Voyage No.</string>
+	<string name="cargo_tracking_search_container_no">Container NO.</string>
+	<string name="cargo_tracking_search_consignee">Consignee</string>
+	<string name="cargo_tracking_search_shipper">Shipper</string>
+	<string name="cargo_tracking_container_no">Container No.</string>
+
+	<string name="cargo_tracking_title_booking_no_short">BKG NO.</string>
+	<string name="cargo_tracking_title_booking_no">Booking NO.</string>
+	<string name="cargo_tracking_title_bl_no">B/L NO.</string>
+	<string name="cargo_tracking_title_hbl_no">H.B/L NO.</string>
+	<string name="cargo_tracking_title_mbl_no">M.B/L NO.</string>
+	<string name="cargo_tracking_title_container_no">Container NO.</string>
+	<string name="cargo_tracking_title_consignee">Consignee</string>
+	<string name="cargo_tracking_title_shipper">Shipper</string>
+
+	<string name="cargo_tracking_status_origin_departure">Origin Departure</string>
+	<string name="cargo_tracking_status_vessel_departure">Vessel Departure</string>
+	<string name="cargo_tracking_status_vessel_arrival">Vessel Arrival</string>
+	<string name="cargo_tracking_status_vessel_berthing">Vessel Berthing</string>
+	<string name="cargo_tracking_status_destination_arrival">Destination Arrival</string>
+
+	<!-- cargo tracking filter -->
+	<string name="cargo_tracking_filters">Filters</string>
+	<string name="cargo_tracking_filters_all_routes">ALL Route</string>
+	<string name="cargo_tracking_filters_all_date">ALL Date</string>
+	<string name="cargo_tracking_filters_all">ALL</string>
+
+	<string name="cargo_tracking_tracking">Tracking</string>
+
+	<string name="cargo_tracking_time_symbol_etd">ETD</string>
+	<string name="cargo_tracking_time_symbol_atd">ATD</string>
+	<string name="cargo_tracking_time_symbol_eta">ETA</string>
+	<string name="cargo_tracking_time_symbol_ata">ATA</string>
+
+	<!-- booking dashboard -->
+    <string name="booking_dashboard">Booking Dashboard</string>
+	<string name="booking_dashboard_your_booking">Your Booking</string>
+
+    <!-- booking dashboard filter -->
+	<string name="datepicker_done">Done</string>
+	<string name="booking_dashboard_filters">Filters</string>
+	<string name="booking_dashboard_filters_status">Status</string>
+	<string name="booking_dashboard_filters_status_clear_all"><u>Clear All</u></string>
+	<string name="booking_dashboard_filters_status_select_all"><u>Select All</u></string>
+	<string name="booking_dashboard_filters_status_draft">Booking Draft</string>
+	<string name="booking_dashboard_filters_status_confirmed">Booking Confirmed</string>
+	<string name="booking_dashboard_filters_status_pol_arrived">POL Arrived</string>
+	<string name="booking_dashboard_filters_status_bdr">BDR</string>
+	<string name="booking_dashboard_filters_status_pod_arrived">POD Arrived</string>
+	<string name="booking_dashboard_filters_route">Route</string>
+	<string name="booking_dashboard_filters_route_pol">POL</string>
+	<string name="booking_dashboard_filters_route_pol_all">All POLs</string>
+	<string name="booking_dashboard_filters_route_pod">POD</string>
+	<string name="booking_dashboard_filters_route_pod_all">All PODs</string>
+	<string name="booking_dashboard_filters_date">Date</string>
+	<string name="booking_dashboard_filters_date_all">ALL</string>
+	<string name="booking_dashboard_filters_date_pol_etd">POL ETD</string>
+	<string name="booking_dashboard_filters_date_pod_eta">POD ETA</string>
+	<string name="booking_dashboard_filters_date_period_1m">1M</string>
+	<string name="booking_dashboard_filters_date_period_3m">3M</string>
+	<string name="booking_dashboard_filters_date_period_6m">6M</string>
+	<string name="booking_dashboard_filters_date_period_custom">Custom</string>
+	<string name="booking_dashboard_filters_date_starts">Starts</string>
+	<string name="booking_dashboard_filters_date_ends">Ends</string>
+	<string name="booking_dashboard_search_bl_no">B/L NO.</string>
+	<string name="booking_dashboard_filters_status_all_status">All Status</string>
+	<string name="booking_dashboard_filters_status_draft_summary">Draft</string>
+	<string name="booking_dashboard_filters_status_confirmed_summary">Confirmed</string>
+
+    <!-- booking dashboard detail -->
+
+    <!-- booking dashboard detail : Manage Booking Change -->
+
+    <!-- booking -->
+	<string name="booking_main_title_create_new_booking">Create A New Booking</string>
+	<string name="booking_container_select_title">Container</string>
+	<string name="search">SEARCH</string>
+	<string name="apply">APPLY</string>
+	<string name="whole">whole</string>
+
+	<!-- Sign In -->
+	<string name="sign_in">Sign In</string>
+	<string name="sign_in_id_hint">id</string>
+	<string name="sign_in_pw_hint">password</string>
+	<string name="sign_in_remember_me">remember me</string>
+
+	<!-- offer -->
+	<string name="delete">DELETE</string>
+	<string name="carrier_logo_image">carrier logo</string>
+	<string name="whole_image">whole image</string>
+	<string name="carrier_name_hint">HLC</string>
+	<string name="carrier_count_hint">+3</string>
+	<string name="price_hint">Price</string>
+	<string name="pol_cd_hint">POL</string>
+	<string name="pod_cd_hint">POD</string>
+    <string name="pod_count_hint">+0</string>
+	<string name="period_hint">Period</string>
+	<string name="pol_name_hint">Pol Name</string>
+	<string name="pod_name_hint">Pod Name</string>
+
+	<string name="offered_sellable">Offered / Sellable</string>
+	<string name="offer_cost_value">Cost Value</string>
+	<string name="offer_unit_price">Unit Price</string>
+	<string name="offer_unit_price_unit">Unit Price(/T)</string>
+
+    <string name="popup_offer_container_type_size">Container Type &amp; Size</string>
+	<string name="popup_offer_container_type_01">Full</string>
+	<string name="popup_offer_container_type_02">Reefer</string>
+	<string name="popup_offer_container_type_03">Empty</string>
+	<string name="popup_offer_container_type_04">SOC</string>
+	<string name="popup_offer_container_size_01">20\',40\',45\',45\'HC</string>
+	<string name="popup_offer_container_size_02">20\',40\',45\',45\'HC</string>
+	<string name="popup_offer_container_size_03">20\',40\',45\',45\'HC</string>
+
+    <!-- sell offer -->
+    <string name="period_and_volume">Period &amp; Volume</string>
+	<string name="week_cell_hint">W00</string>
+	<string name="cost_value_hint">$1,000</string>
+	<string name="volume_value_hint">100</string>
+    <string name="selloffer_create">CREATE</string>
+	<string name="selloffer_exceed_quantity">You are offering more than sellable quantities \nInstead maxi sellable quantities are offered.</string>
+	<string name="select_a_contract">Select a Contract</string>
+	<string name="selloffer_wizard_volume">Set Sell Volume</string>
+	<string name="selloffer_wizard_price">Set Sell Price</string>
+	<string name="selloffer_wizard_plan">Set Sell Plan</string>
+	<string name="selloffer_volume">Volume</string>
+	<string name="selloffer_price">Price</string>
+	<string name="selloffer_plan">Collect Plan</string>
+	<string name="selloffer_total_deal_amount">Total Deal Amount</string>
+
+	<string name="selloffer_basic_payment_plan">Basic Payment Plan</string>
+	<string name="selloffer_collect_first_payment_plan">Collect-First Payment Plan</string>
+	<string name="selloffer_collect_later_payment_plan">Collect-Later Payment Plan</string>
+
+	<string name="selloffer_condition_detail">Condition</string>
+	<string name="selloffer_whole_route">Route</string>
+	<string name="selloffer_price_table">Price Table</string>
+
+	<string name="offer_save_dialog_title">Want save your changes?</string>
+	<string name="offer_save_dialog_desc">You will lose your changes if you continue without saving them.</string>
+	<string name="offer_save_dialog_discard">DISCARD</string>
+	<string name="offer_save_dialog_save">SAVE</string>
+
+	<string name="offer_make_new_sell_offer">Make New Sell Offer</string>
+	<string name="offer_whole_deal_options">Whole Deal Options</string>
+
+	<string name="offer_whole_deal_applied">Applied</string>
+	<string name="offer_whole_deal_not_applied">Not Applied</string>
+
+	<string name="offer_make_a_new_sell_offer">+ NEW SELL OFFER</string>
+	<string name="offer_draft_unit">/T</string>
+
+	<!-- buy offer -->
+	<string name="buyoffer_exceed_quantity">You are offering more than sellable quantities \nInstead maxi sellable quantities are offered.</string>
+	<string name="buy_offer_select_route">Select Route</string>
+	<string name="buy_offer_volume">Volume</string>
+	<string name="buy_offer_price">Price</string>
+	<string name="buy_offer_conditions">Conditions</string>
+	<string name="buy_offer_volume_unit">Volume (T)</string>
+	<string name="buy_offer_wizard_volume">Set Buy Volume</string>
+	<string name="buy_offer_wizard_price">Set Buy Price</string>
+	<string name="buy_offer_wizard_condition">Set Conditions</string>
+	<string name="buy_offer_container_detail">Container Detail</string>
+	<string name="buy_offer_pay_plan">Pay Plan</string>
+	<string name="buy_offer_preferred_carrier">Preferred Carrier</string>
+	<string name="buy_offer_holding_deposit_rate">(%s%%)</string>
+	<string name="buy_offer_required_balance">Required Balance</string>
+	<string name="buy_offer_available_account_budget">Available Account Budget</string>
+	<string name="offer_make_new_buy_offer">Make New Buy Offer</string>
+	<string name="buy_offer_carrier_edit">Edit</string>
+	<string name="buy_offer_basic_payment_plan">Basic Payment Plan</string>
+	<string name="buy_offer_collect_first_payment_plan">Pay-First Payment Plan</string>
+	<string name="buy_offer_collect_later_payment_plan">Pay-Later Payment Plan</string>
+	<string name="buy_offer_recently">Recently</string>
+	<string name="buy_offer_service_lane">Service Lane</string>
+	<string name="buy_offer_pols">POLs</string>
+	<string name="buy_offer_pods">PODs</string>
+	<string name="buy_offer_search">search</string>
+
+	<string name="buyoffer_wizard_route">Select Route</string>
+
+	<string name="offer_make_a_new_buy_offer">+ NEW BUY OFFER</string>
+
+    <!--- menu -->
+	<string name="singout_cancel_title">Sign Out</string>
+	<string name="signout_cancel_desc">Want to Sign Out?</string>
+
+	<!-- FCM channel -->
+
+    <!-- SERVICE notification builder -->
+	<string name="notification_service_channel_title" translatable="true">Trade messaging service</string>
+	<string name="notification_service_channel_text" translatable="true">Trade messaging service running...</string>
+
+	<!-- Your trade dashboard -->
+	<string name="dashboard_title_buyoffer">Your Buy Offers</string>
+	<string name="dashboard_title_selloffer">Your Sell Offers</string>
+	<string name="dashboard_filter">filter</string>
+	<string name="dashboard_list_complete_draft">Completed Draft</string>
+	<string name="dashboard_list_on_market">On Market</string>
+	<string name="dashboard_list_Closed">Closed</string>
+	<string name="dashboard_view_offer_history">View Offer History</string>
+	<string name="dashboard_view_transaction_statement">View Transaction Statement</string>
+	<string name="dashboard_cancel_offer">CANCEL OFFER</string>
+	<string name="dashboard_revise_offer">REVISE OFFER</string>
+
+	<string name="your_offers_on_market_button">On Market (%d)</string>
+	<string name="your_offers_closed_button">Closed (%d)</string>
+
+	<string name="your_offers_last_dealt_at">Last Dealt at  %s</string>
+	<string name="your_offers_offered_at">Offered at  %s</string>
+
+	<string name="your_offers_buy_offer_history">Buy Offer History</string>
+	<string name="your_offers_sell_offer_history">Sell Offer History</string>
+
+	<string name="your_offers_status_draft">Draft</string>
+	<string name="your_offers_status_draft_on_market">Draft > On Market</string>
+	<string name="your_offers_status_draft_closing">Draft > Closing</string>
+	<string name="your_offers_status_on_market">On Market</string>
+	<string name="your_offers_status_on_market_draft">On Market > Draft</string>
+	<string name="your_offers_status_on_market_closed">On Market > Closed</string>
+	<string name="your_offers_status_draft_closed">Draft > Closed</string>
+
+	<string name="your_offers_event_buy_offer_placed_desc">Your buy offer placed</string>
+	<string name="your_offers_event_buy_dealt_buy_desc">Dealt</string>
+	<string name="your_offers_event_buy_offer_canceled_desc">All week canceled</string>
+	<string name="your_offers_event_buy_week_expired_desc">Expired</string>
+	<string name="your_offers_event_buy_offer_closed_desc">All week closed</string>
+	<string name="your_offers_event_buy_all_out_desc">All week bought out</string>
+
+	<string name="your_offers_event_sell_offer_placed_desc">Your sell offer placed</string>
+	<string name="your_offers_event_sell_dealt_buy_desc">Dealt</string>
+	<string name="your_offers_event_sell_offer_canceled_desc">All week canceled</string>
+	<string name="your_offers_event_sell_week_expired_desc">Expired</string>
+	<string name="your_offers_event_sell_offer_closed_desc">All week closed</string>
+	<string name="your_offers_event_sell_all_out_desc">All week sold out</string>
+
+	<string name="your_offers_event_buy_offer_placed">Buy Offer Placed</string>
+	<string name="your_offers_event_buy_dealt_buy">Dealt (Buy)</string>
+	<string name="your_offers_event_buy_offer_revised">Offer Revised</string>
+	<string name="your_offers_event_buy_week_expired">%s Expired</string>
+	<string name="your_offers_event_buy_offer_canceled">Offer Canceled</string>
+	<string name="your_offers_event_buy_offer_closed">Offer closed</string>
+	<string name="your_offers_event_buy_all_out">All Bought out !</string>
+
+	<string name="your_offers_event_sell_offer_placed">Sell Offer placed</string>
+	<string name="your_offers_event_sell_dealt_buy">Dealt (Sell)</string>
+	<string name="your_offers_event_sell_offer_revised">Offer Revised</string>
+	<string name="your_offers_event_sell_week_expired">%s Expired</string>
+	<string name="your_offers_event_sell_offer_canceled">Offer Canceled</string>
+	<string name="your_offers_event_sell_offer_closed">Offer Closed</string>
+	<string name="your_offers_event_sell_all_out">All Sold out !</string>
+
+	<string name="your_offers_history_detail_event">Event</string>
+	<string name="your_offers_history_detail_status">Status</string>
+	<string name="your_offers_history_detail_date">Date</string>
+	<string name="your_offers_history_detail_expired_volume">Expired volume</string>
+	<string name="your_offers_history_detail_cost_value">Cost value</string>
+
+	<string name="your_offers_history_detail_period_volume">Period &amp; Volume</string>
+	<string name="your_offers_history_detail_expiration_note">Expiration Note</string>
+	<string name="your_offers_history_detail_cancelation_items">Cancelation Items</string>
+
+	<string name="your_offers_history_detail_title_period">Period</string>
+	<string name="your_offers_history_detail_title_price">Price(/T)</string>
+	<string name="your_offers_history_detail_title_volume">Volume</string>
+	<string name="your_offers_history_detail_title_timestamp">Timestamp</string>
+	<string name="your_offers_history_detail_title_offered_volume">Offered Volume</string>
+	<string name="your_offers_history_detail_title_expected_value">Expected Value</string>
+	<string name="your_offers_history_detail_title_estimated_cost">Estimated Cost</string>
+	<string name="your_offers_history_detail_title_bought_volume">Bought Volume</string>
+	<string name="your_offers_history_detail_title_remainder_volume">Remainder Volume</string>
+	<string name="your_offers_history_detail_title_cost_value">Cost Value</string>
+	<string name="your_offers_history_detail_title_sold_volume">Sold Volume</string>
+	<string name="your_offers_history_detail_title_sales_value">Sales Value</string>
+
+	<string name="your_offers_history_detail_total_estimated_cost">TOTAL ESTIMATED COST</string>
+	<string name="your_offers_history_detail_total_expected_sales_value">TOTAL EXPECTED SALES VALUE</string>
+	<string name="your_offers_history_detail_total_deposit_value">TOTAL DEPOSIT VALUE (%d%%)</string>
+
+	<!-- Transaction Statement -->
+	<string name="your_offers_transaction_statement">Transaction Statement</string>
+	<string name="your_offers_transaction_show_balance">Show Balance</string>
+	<string name="your_offers_transaction_hide_balance">Hide Balance</string>
+	<string name="your_offers_transaction_inventory">Inventory %sT</string>
+	<string name="your_offers_transaction_balance">Balance %s</string>
+
+	<string name="your_offers_transaction_title_event_date">Event Date</string>
+	<string name="your_offers_transaction_title_route">Route</string>
+	<string name="your_offers_transaction_title_event">Event</string>
+	<string name="your_offers_transaction_title_in_out">In/Out</string>
+
+	<string name="your_offers_transaction_event_week_dealt">%s Dealt</string>
+	<string name="your_offers_transaction_event_sell">&#160;(Sell)</string>
+	<string name="your_offers_transaction_event_buy">&#160;(Buy)</string>
+	<string name="your_offers_transaction_event_deposit">DEPOSIT %s%%</string>
+	<string name="your_offers_transaction_in_out_buy_volume">+&#160;</string>
+	<string name="your_offers_transaction_in_out_sell_volume">-&#160;</string>
+	<string name="your_offers_transaction_in_out_buy_price">-&#160;</string>
+	<string name="your_offers_transaction_in_out_sell_price">+&#160;</string>
+
+	<string name="your_offers_transaction_desc_pols">POLs</string>
+	<string name="your_offers_transaction_desc_pods">PODs</string>
+	<string name="your_offers_transaction_desc_offer_no">Offer no.</string>
+	<string name="your_offers_transaction_desc_transaction_no">Transaction no.</string>
+	<string name="your_offers_transaction_desc_person_in_charge">Person in charge</string>
+	<string name="your_offers_transaction_desc_account">Account</string>
+
+	<!-- Transaction Statement Filter -->
+	<string name="your_offers_transaction_filter">Filter</string>
+	<string name="your_offers_transaction_filter_period">Period</string>
+	<string name="your_offers_transaction_filter_period_from_to">%s ~ %s</string>
+	<string name="your_offers_transaction_filter_1_week">1 Week</string>
+	<string name="your_offers_transaction_filter_15_days">15 Days</string>
+	<string name="your_offers_transaction_filter_1_month">1 Month</string>
+	<string name="your_offers_transaction_filter_select">Select</string>
+	<string name="your_offers_transaction_filter_event_type">Event Type</string>
+	<string name="your_offers_transaction_filter_all">All</string>
+	<string name="your_offers_transaction_filter_dealt">Dealt</string>
+	<string name="your_offers_transaction_filter_date">Date</string>
+	<string name="your_offers_transaction_filter_newest">Newest</string>
+	<string name="your_offers_transaction_filter_oldest">Oldest</string>
+    <string name="your_offers_transaction_filter_result">%1$s - %2$s - %3$s</string>
+	<string name="your_offers_transaction_filter_apply">APPLY</string>
+
+	<string name="your_offers_popup_left">Left</string>
+	<string name="your_offers_popup_left_price">Price(/T)</string>
+	<string name="your_offers_popup_left_est_cost_value">Est. Cost Value</string>
+	<string name="your_offers_popup_left_est_sales_value">Est. Sales Value</string>
+	<string name="your_offers_popup_left_trade_closing">Trade Closing</string>
+	<string name="your_offers_popup_dealt">Dealt</string>
+	<string name="your_offers_popup_dealt_cost_value">Cost Value</string>
+	<string name="your_offers_popup_dealt_sales_value">Sales Value</string>
+	<string name="your_offers_popup_dealt_history">Dealt History</string>
+
+	<string name="your_offer_cancel_dialog_title">Are you sure\nto cancel this offer?</string>
+	<string name="your_offer_cancel_dialog_desc">Your offer will be deleted\n completely.</string>
+	<string name="your_offer_cancel_dialog_yes">YES</string>
+	<string name="your_offer_cancel_dialog_cancel">CANCEL</string>
+
+	<string name="your_offer_view_table">View Table</string>
+	<string name="your_offer_dealt_cost_value">Dealt Cost Value</string>
+	<string name="your_offer_estimated_total_cost_value">Estimated Total Cost Value</string>
+	<string name="your_offer_dealt_sales_value">Dealt Sales Value</string>
+	<string name="your_offer_estimated_total_sales_value">Estimated Total Sales Value</string>
+
+	<string name="your_offers_date_time_host">%1$s by %2$s</string>
+
+	<string name="your_offers_edit_discard_offer">DISCARD</string>
+	<string name="your_offers_edit_revise_offer">REVISE</string>
+	<string name="your_offers_edit_cancel_offer">CANCEL</string>
+
+	<string name="your_offer_edit_dialog_discard_title">Are you sure\nto Discard this offer?</string>
+	<string name="your_offer_edit_dialog_discard_desc">Your offer will be deleted\ncompletely.</string>
+	<string name="your_offer_edit_dialog_revise_title">Are you sure\nto Revise this offer?</string>
+	<string name="your_offer_edit_dialog_revise_desc">Your offer will be deleted\ncompletely.</string>
+	<string name="your_offer_edit_dialog_yes">YES</string>
+	<string name="your_offer_edit_dialog_cancel">CANCEL</string>
+	<string name="your_offer_edit_title_buy">Buy Offer</string>
+	<string name="your_offer_edit_title_sell">Sell Offer</string>
+	<string name="your_offer_edit_dialog_buy">buy</string>
+	<string name="your_offer_edit_dialog_sell">sell</string>
+
+	<string name="price_t">Price(/T)</string>
+	<string name="left">Left</string>
+	<string name="dealt">Dealt</string>
+	<string name="cost_value">Cost Value</string>
+	<string name="sales_value">Sales Value</string>
+	<string name="sales">Sales</string>
+
+	<!-- Market Watch -->
+	<string name="market_watch_setting_chart_type">Chart Type</string>
+	<string name="market_watch_setting_interval">Interval</string>
+	<string name="market_watch_setting_moving_average">Moving Average</string>
+	<string name="market_watch_setting_indicators">Indicators</string>
+	<string name="market_watch_chart_line">Line</string>
+	<string name="market_watch_chart_mountain">Mountain</string>
+	<string name="market_watch_chart_candle">Candle</string>
+	<string name="market_watch_chart_hollow_candle">Hollow Candle</string>
+	<string name="market_watch_chart_bar">Bar</string>
+	<string name="market_watch_chart_colored_bar">Colored Bar</string>
+	<string name="market_watch_chart_1day">1 day</string>
+	<string name="market_watch_chart_1week">1 week</string>
+	<string name="market_watch_chart_1month">1 month</string>
+	<string name="market_index_chart_daily">daily</string>
+	<string name="market_index_chart_weekly">weekly</string>
+	<string name="market_index_chart_monthly">monthly</string>
+	<string name="market_index_chart_yearly">yearly</string>
+	<!--<string name="market_watch_chart_indicator_mae">Moving Average Envelope</string>
+    <string name="market_watch_chart_indicator_mad">Moving Average Deviation</string>
+    <string name="market_watch_chart_indicator_macd">MACD</string>
+    <string name="market_watch_chart_indicator_rsi">RSI</string>
+    <string name="market_watch_chart_indicator_bolinger_band">Bolinger Bands</string>
+    <string name="marekt_watch_chart_indicator_view_all">View all indicator</string>-->
+	<string name="market_watch_settin_Offset">Offset</string>
+	<string name="market_watch_deal_chart">Deal Chart</string>
+	<string name="market_watch_deal_history">Deal History</string>
+	<string name="market_watch_deal_bid">Bid</string>
+	<string name="market_watch_deal_ask">Ask</string>
+	<string name="market_watch_marker_dealdate">Deal Date</string>
+	<string name="market_watch_marker_volume">Volume</string>
+	<string name="market_watch_marker_open">Open</string>
+	<string name="market_watch_marker_high">High</string>
+	<string name="market_watch_marker_low">Low</string>
+	<string name="market_watch_marker_closed">Closed</string>
+	<string name="market_watch_index_marker_date">Date</string>
+	<string name="market_watch_index_marker_usd">USD</string>
+
+	<!-- Booking DashBoard -->
+	<string name="booking_dashboard_booking_no">Booking NO.</string>
+	<string name="booking_dashboard_bkg_no">BKG NO</string>
+	<string name="booking_dashboard_bl_no">B/L NO.</string>
+	<string name="booking_dashboard_container_no">Container NO.</string>
+	<string name="booking_dashboard_consignee">Consignee</string>
+	<string name="booking_dashboard_shipper">Shipper</string>
+	<string name="booking_dashboard_freight_forwarder">Freight Forwarder</string>
+	<string name="booking_dashboard_optional">optional</string>
+	<string name="booking_dashboard_notity">Notify</string>
+	<string name="booking_dashboard_additional">Additional Information</string>
+	<string name="booking_dashboard_cutoff">Cutoff</string>
+	<string name="booking_dashboard_cutoff_24hr">24- hrs</string>
+	<string name="booking_dashboard_cutoff_72hr">24-72 hrs</string>
+	<string name="booking_dashboard_cutoff_72hr_over">72+ hrs</string>
+	<string name="booking_dashboard_si_doc">SI &amp; Doc.</string>
+	<string name="booking_dashboard_bldraft">BL Drafting</string>
+	<string name="booking_dashboard_vgm">VGM</string>
+	<string name="booking_dashboard_andvance_manifest">Advance Manifest</string>
+	<string name="booking_dashboard_condition_details">Condition Details</string>
+	<string name="booking_dashboard_vessel_schedule">Vessel Schedule</string>
+	<string name="booking_dashboard_charge">Charge</string>
+	<string name="booking_dashboard_payplan">Pay Plan</string>
+	<string name="booking_dashboard_bl_invoice">B/L &amp; Invoice</string>
+	<string name="booking_dashboard_cargo_tracking">Cargo Tracking</string>
+	<string name="booking_dashboard_parties">Parties</string>
+	<string name="booking_dashboard_freight">Freight</string>
+	<string name="booking_dashboard_lowsurphur">Low Surphur</string>
+	<string name="booking_dashboard_terminal_handling_service">Terminal Handling Service</string>
+	<string name="booking_dashboard_port_service_charge">Port Service Charge</string>
+	<string name="booking_dashboard_total">TOTAL</string>
+	<string name="booking_dashboard_vessel_pol_eta">POL ETA</string>
+	<string name="booking_dashboard_vessel_pol_etb">POL ETB</string>
+	<string name="booking_dashboard_vessel_pol_etd">POL ETD</string>
+	<string name="booking_dashboard_vessel_pod_eta">POD ETA</string>
+	<string name="booking_dashboard_vessel_pod_etb">POD ETB</string>
+	<string name="booking_dashboard_payplan_initial_payment">Initial Payment</string>
+	<string name="booking_dashboard_payplan_midterm_payment">Mid Term Payment</string>
+	<string name="booking_dashboard_payplan_remainder">Remainder</string>
+	<string name="booking_dashboard_vgm_unit_pound">lb</string>
+	<string name="booking_dashboard_vgm_unit_kg">kg</string>
+	<string name="booking_dashboard_vgm_total_weight">Total Weight</string>
+	<string name="booking_dashboard_vgm_container_weight">Container Weight</string>
+	<string name="booking_dashboard_vgm_cargo_weight">Cargo Weight</string>
+	<string name="booking_dashboard_si_parties">Parties</string>
+	<string name="booking_dashboard_si_container">Container</string>
+	<string name="booking_dashboard_si_mark_desc">Mark &amp; Description</string>
+	<string name="booking_dashboard_si_invoice_ref_no">Invoice Reference No.</string>
+	<string name="booking_dashboard_si_purchace_order_no">Purchase Order No.</string>
+	<string name="booking_dashboard_si_export_ref_no">Export ref No.</string>
+	<string name="booking_dashboard_si_eori_no">EORI No.</string>
+	<string name="booking_dashboard_si_precarriage_by">Pre-Carriage by</string>
+	<string name="booking_dashboard_si_cntr_type">CNTR Type</string>
+	<string name="booking_dashboard_si_seal_no1">Seal NO.1</string>
+	<string name="booking_dashboard_si_seal_no2">Seal NO.2</string>
+	<string name="booking_dashboard_si_temp">Temperature</string>
+	<string name="booking_dashboard_si_nature">Nature</string>
+	<string name="booking_dashboard_si_ventilation">Ventilation</string>
+	<string name="booking_dashboard_si_hts_code">HTS Code(U.S)</string>
+	<string name="booking_dashboard_si_commodity">Commodity</string>
+	<string name="booking_dashboard_si_cargo_package">Cargo Package</string>
+	<string name="booking_dashboard_si_cargo_weight">Cargo Weight</string>
+	<string name="booking_dashboard_si_measure">Measure</string>
+	<string name="booking_dashboard_si_po_no">P/O NO.</string>
+	<string name="booking_dashboard_si_mark">Mark</string>
+	<string name="booking_dashboard_si_description">Description</string>
+	<string name="booking_dashboard_si_package">Package</string>
+	<string name="booking_dashboard_si_pallets">Pallets</string>
+	<string name="booking_dashboard_si_cartons">Cartons</string>
+	<string name="booking_dashboard_si_rolls">Rolls</string>
+	<string name="booking_dashboard_si_box">Box</string>
+	<string name="booking_dashboard_si_cases">Cases</string>
+	<string name="booking_dashboard_blinvoice_invoiceno">Invoice No.</string>
+	<string name="booking_dashboard_blinvoice_seller_phone_no">Seller Phone No.</string>
+	<string name="booking_dashboard_blinvoice_seller_email">Seller Email</string>
+	<string name="booking_dashboard_blinvoice_seller_address">Seller Address</string>
+	<string name="booking_dashboard_blinvoice_buyer_address">Buyer Address</string>
+	<string name="booking_dashboard_blinvoice_date_issue">Date of Issue</string>
+	<string name="booking_dashboard_blinvoice_invoice_total">Invoice Total</string>
+	<string name="booking_dashboard_blinvoice_unit_cost">Unit Cost</string>
+	<string name="booking_dashboard_blinvoice_qty">Qty</string>
+	<string name="booking_dashboard_blinvoice_amount">Amount</string>
+	<string name="booking_dashboard_blinvoice_subtotal">Subtotal</string>
+	<string name="booking_dashboard_blinvoice_tax">Tax</string>
+	<string name="booking_dashboard_blinvoice_total">Total</string>
+
+	<!-- ETC -->
+	<string name="working_in_progress">Working in progress</string>
+
+</resources>

@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/pale_gray"
+    android:orientation="vertical"
+    tools:context=".ui.sellorder.SellOrderActivity">
+
+    <!-- has contract -->
+    <include layout="@layout/body_order_sell_contract_list" android:id="@+id/body_order_sell_contract_list"/>
+
+    <LinearLayout
+        android:id="@+id/ll_order_sell_detail_no_contract_in_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            style="@style/txt_opensans_eb_20_verilightpink"
+            android:text="@string/buy_order_no_contract_in_your_inventory"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_horizontal"
+            style="@style/txt_opensans_b_13_verylightpink"
+            android:text="@string/buy_order_no_contract_desc_in_your_inventory"/>
+    </LinearLayout>
+
+    <!-- select : RecyclerView -->
+    <include layout="@layout/body_order_sell_recycler_select_card" />
+
+    <TextView
+        android:id="@+id/tv_order_sell_new_buy_offer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        style="@style/txt_opensans_semib_13_greyishbrown"
+        android:text="@string/buy_order_select_new_buy_offer"
+        android:background="@drawable/bg_round_corner_greyish_brown_fill_pale"
+        android:visibility="visible"/>
+
+</LinearLayout>

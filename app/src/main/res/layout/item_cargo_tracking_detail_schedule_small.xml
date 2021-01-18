@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_item_cargo_tracking_detail_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/ll_item_cargo_tracking_detail_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!-- line 1 -->
+            <View
+                android:id="@+id/view_status_first_line"
+                android:layout_width="4dp"
+                android:layout_height="10dp"
+                android:background="@color/color_bfbfbf"/>
+            <!-- line 2 -->
+            <View
+                android:id="@+id/view_status_second_line"
+                android:layout_width="4dp"
+                android:layout_height="35dp"
+                android:background="@color/color_bfbfbf"/>
+            <!-- line 3 -->
+            <View
+                android:id="@+id/view_status_third_line"
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/color_bfbfbf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cargo_status"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:text="Original Departure"
+                android:background="@drawable/bg_round_corner_13_bfbfbf"
+                style="@style/txt_opensans_eb_10_white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_cargo_date_time_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="ETD"
+                    android:visibility="gone"
+                    style="@style/txt_opensans_b_13_bfbfbf"/>
+                <TextView
+                    android:id="@+id/tv_cargo_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="2020-06-03 15:00"
+                    style="@style/txt_opensans_r_13_bfbfbf"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_cargo_port_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="CNLYG"
+                    style="@style/txt_opensans_eb_11_bfbfbf"/>
+
+                <TextView
+                    android:id="@+id/tv_cargo_port_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="Lianyungang, China"
+                    style="@style/txt_opensans_r_11_bfbfbf"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- grey / blue circle -->
+    <FrameLayout
+        android:id="@+id/fl_item_cargo_tracking_detail_schedule_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="top">
+        <ImageView
+            android:id="@+id/view_status_circle"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="top"
+            android:background="@drawable/white_grey_circle_12_12" />
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

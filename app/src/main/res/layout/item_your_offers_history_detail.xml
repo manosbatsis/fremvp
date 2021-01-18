@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pale_gray">
+
+    <LinearLayout
+        android:id="@+id/ll_your_offers_history_detail_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_item_value1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="W04"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_item_value2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.35"
+                    android:gravity="center_vertical|right"
+                    style="@style/txt_opensans_r_13_greyishbrown"
+                    android:text="$500"/>
+                <TextView
+                    android:id="@+id/tv_item_value3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    style="@style/txt_opensans_r_13_greyishbrown"
+                    android:text="200T"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_item_value4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.2"
+                android:gravity="center_vertical|right"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="$20,000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

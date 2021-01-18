@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "352817674178",
+    "firebase_url": "https://freight9-push.firebaseio.com",
+    "project_id": "freight9-push",
+    "storage_bucket": "freight9-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352817674178:android:6ebb49f909e139316d885b",
+        "android_client_info": {
+          "package_name": "com.cyberlogitec.freight9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352817674178-f9cnrjisohhhoqhaa7agpg30fvbkt9h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2BCBHXqJWdgStxnwkWTXZ757R7r5Rd6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352817674178-f9cnrjisohhhoqhaa7agpg30fvbkt9h7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

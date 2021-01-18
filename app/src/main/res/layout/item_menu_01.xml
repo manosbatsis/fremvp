@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- 우측 레이아웃 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 우상단 흰색 레이아웃 -->
+            <LinearLayout
+                android:id="@+id/lo_menu_right_head"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/iv_menu_message"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/btn_check_box_ractangle_selected_l"/>
+
+                <TextView
+                    android:id="@+id/tv_organization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="32dp"
+                    android:text="Cyberogitec"
+                    style="@style/txt_opensans_eb_25_greyishbrown"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/tv_user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="34dp"
+                    android:text="freight9@cyberlogitec.com"
+                    style="@style/txt_opensans_r_15_greyishbrown"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <!-- 우상단 밸런스 레이블 레이아웃 -->
+            <LinearLayout
+                android:id="@+id/lo_menu_right_balance_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/blue_violet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lo_menu_right_head"
+                app:layout_constraintVertical_bias="0.0"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_vertical"
+                    android:text="Balance"
+                    style="@style/txt_opensans_l_13_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_vertical"
+                    android:text="Buyable Balnace"
+                    style="@style/txt_opensans_l_13_white"/>
+            </LinearLayout>
+
+            <!-- 우상단 밸런스 레이아웃 -->
+            <LinearLayout
+                android:id="@+id/lo_menu_right_balance_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/blue_violet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lo_menu_right_balance_label"
+                app:layout_constraintVertical_bias="0.0"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:text="$"
+                    style="@style/txt_opensans_b_20_white"/>
+
+                <TextView
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:text="162,000"
+                    style="@style/txt_opensans_b_20_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:text="$"
+                    style="@style/txt_opensans_b_20_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:text="520,0000"
+                    style="@style/txt_opensans_b_20_white"/>
+            </LinearLayout>
+
+            <!-- 우하단 메뉴 레이아웃 -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@color/color_1a1a1a"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lo_menu_right_balance_txt"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:background="@color/color_1a1a1a"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="32dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="4dp"
+                            style="@style/txt_opensans_eb_20_white"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_market_trade"/>
+
+                        <TextView
+                            android:id="@+id/tv_market"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:text="@string/menu_market"/>
+
+                        <TextView
+                            android:id="@+id/tv_sell_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:text="@string/menu_make_new_selloffer"/>
+
+                        <TextView
+                            android:id="@+id/tv_buy_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:text="@string/menu_make_new_buyoffer"/>
+
+                        <TextView
+                            android:id="@+id/tv_market_watch"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:text="Market Watch"/>
+
+                        <TextView
+                            android:id="@+id/tv_market_index"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:text="Market Index"/>
+                        <TextView
+                            android:id="@+id/tv_market_commentary"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:text="Market Commentary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:paddingStart="32dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_your_freight9"
+                            style="@style/txt_opensans_eb_20_white"/>
+
+                        <TextView
+                            android:id="@+id/tv_inventory"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_your_inventory"
+                            style="@style/txt_opensans_b_16_verylightpink"/>
+
+                        <TextView
+                            android:id="@+id/tv_your_buy_offers"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_your_buy_offers"
+                            style="@style/txt_opensans_b_16_verylightpink"/>
+
+                        <TextView
+                            android:id="@+id/tv_your_sell_offers"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_your_sell_offers"
+                            style="@style/txt_opensans_b_16_verylightpink"/>
+
+                        <TextView
+                            android:id="@+id/tv_booking_dashboard"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_booking_dashboard"
+                            style="@style/txt_opensans_b_16_verylightpink"/>
+
+                        <TextView
+                            android:id="@+id/tv_cargo_tracking"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_cargo_tracking"
+                            style="@style/txt_opensans_b_16_verylightpink"/>
+
+                        <!-- Pay/Collect Plan -->
+                        <TextView
+                            android:id="@+id/tv_pay_collect_plan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_finance_pay_collect_plan"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:visibility="gone"/>
+
+                        <!-- Transaction Statement -->
+                        <TextView
+                            android:id="@+id/tv_transaction_statement"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_finance_transaction_statement"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:visibility="gone"/>
+
+                        <!-- Invoice -->
+                        <TextView
+                            android:id="@+id/tv_invoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="52dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/menu_finance_invoice"
+                            style="@style/txt_opensans_b_16_verylightpink"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Sign Out"
+                            style="@style/txt_opensans_b_21_515151"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

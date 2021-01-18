@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/pale_gray">
+
+    <!-- 1st : Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_carriers_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal|start"
+                android:text="@string/carrier"
+                style="@style/txt_opensans_eb_25_greyishbrown"/>
+
+            <TextView
+                android:id="@+id/tv_carrier_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBaseline="@+id/tv_carriers_title"
+                android:text="@string/edit2"
+                style="@style/txt_opensans_r_13_greyishbrown"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 2nd : Carrier -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        style="@style/CardViewStyle"
+        tools:ignore="ContentDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round_corner_8_white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_carrier"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/carrier_logo_default_l"/>
+
+                <TextView
+                    android:id="@+id/tv_carrier_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/iv_carrier"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="All Carriers"
+                    style="@style/txt_opensans_eb_15_greyishbrown"/>
+
+                <TextView
+                    android:id="@+id/tv_carrier_count"
+                    style="@style/txt_opensans_b_11_737373"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_carrier_code"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@+id/tv_carrier_code"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text=""/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

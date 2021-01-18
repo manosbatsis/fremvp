@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_route_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/pale_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_route_search_header"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_route_search"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:background="@color/color_1d1d1d"
+        app:layout_constraintTop_toBottomOf="@id/container_route_search_header">
+
+        <EditText
+            android:id="@+id/et_route_search_search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="16dp"
+            android:textCursorDrawable="@null"
+            android:fontFamily="@font/opensans_regular"
+            android:singleLine="true"
+            android:background="@drawable/bg_rectangle_0d0d0d"
+            android:textColorHint="@color/greyish_brown"
+            android:imeOptions="actionSearch"
+            android:hint="search"
+            style="@style/txt_opensans_b_16_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_back_to_default"/>
+
+        <ImageView
+            android:id="@+id/iv_back_to_default"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:src="@drawable/ic_toolbar_back"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_remove_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_x_drak"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/et_route_search_search"
+            app:layout_constraintTop_toTopOf="@id/et_route_search_search"
+            app:layout_constraintBottom_toBottomOf="@id/et_route_search_search"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_route_search_selected_port"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:background="@drawable/bg_rectangle_0d0d0d"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_route_search_selected_port_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="POR"
+                style="@style/txt_opensans_eb_16_greyishbrown"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_route_search_selected_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="PORT"
+                style="@style/txt_opensans_b_16_white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_route_search_selected_port_type"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_route_search_selected_port"
+                app:layout_constraintRight_toLeftOf="@id/iv_route_search_selected_port_delete"
+                >
+                <com.cyberlogitec.freight9.lib.ui.view.GradientTextView
+                    android:id="@+id/tv_route_search_selected_port_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="port, detail"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    app:fading_color="@color/black"
+                    app:fading_width="24dp"
+                    style="@style/txt_opensans_r_13_white"
+                />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_route_search_selected_port_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_search_x_drak"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/container_route_search_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1d1d1d"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_route_search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_toolbar_back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/tv_route_search_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="Preferred Route Edit"
+                android:textSize="20sp"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/iv_route_search_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_toolbar_done"
+                android:layout_gravity="right"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tabLayout_route_select"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout_route_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabIndicatorFullWidth="false"
+                app:tabPaddingTop="10dp"
+                app:tabTextAppearance="@style/RouteSearch.TabText"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/greyish_brown"
+                app:tabIndicatorColor="@color/purpley_blue"
+                app:tabIndicatorHeight="5dp"
+                app:tabMaxWidth="0dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:layout_constraintTop_toBottomOf="@id/iv_route_search_done"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

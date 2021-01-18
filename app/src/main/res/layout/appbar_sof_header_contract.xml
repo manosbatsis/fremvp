@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    android:background="@color/title_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bar">
+
+        <!-- background -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/tv_pol_cd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/from"
+                android:hint="@string/pol_cd_hint"
+                style="@style/txt_opensans_eb_15_white"/>
+
+            <TextView
+                android:id="@+id/tv_pol_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/tv_pol_cd"
+                android:layout_toStartOf="@+id/vw_route_seprator"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:ellipsize="end"
+                android:maxLines="1"
+                style="@style/txt_opensans_r_13_white"/>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/title_bar"/>
+
+            <ImageView
+                android:id="@+id/vw_route_seprator"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_routefilter_fromto_default"/>
+
+            <TextView
+                android:id="@+id/tv_pod_cd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/vw_route_seprator"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/to"
+                android:hint="@string/to"
+                style="@style/txt_opensans_eb_15_white"/>
+
+            <TextView
+                android:id="@+id/tv_pod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/tv_pod_cd"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:text=""
+                android:ellipsize="end"
+                android:maxLines="1"
+                style="@style/txt_opensans_r_13_white"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+

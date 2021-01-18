@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:layout_height="243dp">
+    <com.cyberlogitec.freight9.lib.ui.datepicker.date.MonthPicker
+        android:id="@+id/monthPicker_layout_date"
+        app:halfVisibleItemCount="2"
+        app:areaAlign="align_right"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <com.cyberlogitec.freight9.lib.ui.datepicker.date.DayPicker
+        android:id="@+id/dayPicker_layout_date"
+        app:halfVisibleItemCount="2"
+        app:areaAlign="align_center"
+        android:layout_width="90dp"
+        android:layout_height="match_parent" />
+    <com.cyberlogitec.freight9.lib.ui.datepicker.date.YearPicker
+        android:id="@+id/yearPicker_layout_date"
+        app:halfVisibleItemCount="2"
+        app:areaAlign="align_left"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

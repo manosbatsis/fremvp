@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pale_gray">
+
+    <LinearLayout
+        android:id="@+id/ll_volume_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:paddingRight="14dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/chk_period_item"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="5dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/bg_checkbox"/>
+                <TextView
+                    android:id="@+id/tv_week_item"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical|right"
+                    style="@style/txt_opensans_r_13_greyishbrown"
+                    android:text="W04"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_volume_input_item"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:text="0"
+                    style="@style/txt_opensans_b_13_333333"
+                    android:background="@drawable/bg_order_edittext_gray_border"/>
+                <TextView
+                    android:id="@+id/tv_volume_input_item"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_vertical|right"
+                    android:visibility="gone"
+                    android:text="0"
+                    style="@style/txt_opensans_b_13_333333"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

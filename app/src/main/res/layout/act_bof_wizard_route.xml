@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/pale_gray"
+	tools:context=".ui.buyoffer.BofWizardRouteActivity">
+
+	<!-- appbar_bof_route_wizard -->
+	<include layout="@layout/appbar_bof_wizard_route"/>
+
+	<!-- body -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_marginBottom="0dp"
+		android:background="@color/pale_gray"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.cyberlogitec.freight9.lib.ui.fragmentstepper.FragmentStepper
+			android:id="@+id/wizard_stepper"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/ll_bottom_btn_floating"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom"
+		android:visibility="visible">
+		<Button
+			android:id="@+id/btn_select_skip"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/button_bottom_enable_disable"
+			android:gravity="center"
+			android:visibility="visible"
+			android:enabled="true"
+			android:text="@string/skip"
+			style="@style/txt_opensans_eb_16_white"/>
+	</FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

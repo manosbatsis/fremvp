@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_sof_router_price"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="0dp"
+    >
+    <LinearLayout
+        android:id="@+id/tv_pol_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            style="@style/txt_opensans_b_11_4c4c4c"
+            android:text="POL Arrived"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            style="@style/CardViewStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 상단 -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_carrier_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_carrier_msk"/>
+
+                    <TextView
+                        android:id="@+id/tv_carrier_name"
+                        style="@style/txt_opensans_b_15_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/iv_carrier_logo"
+                        android:gravity="center_vertical"
+                        android:text="MSK"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_vvd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@+id/tv_carrier_name"
+                        android:gravity="start|center_vertical"
+                        style="@style/txt_opensans_r_11_848484"
+                        android:text="SP1 MAERSK GUATEMALA 017W"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/btn_more"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+                <!-- seperator 1-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_f2f2f2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_opensans_b_10_4c4c4c"
+                        android:text="@string/pol_cd_hint"/>
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="85dp"
+                        style="@style/txt_opensans_b_10_4c4c4c"
+                        android:text="@string/pod_cd_hint"/>
+
+                </LinearLayout>
+
+                <!-- 중간: POR~POL-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lo_pol"
+                        android:layout_width="132dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_pol_cd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/pol_cd_hint"
+                            style="@style/txt_opensans_eb_18_4c4c4c"/>
+
+                        <TextView
+                            android:id="@+id/tv_pol_cnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/carrier_count_hint"
+                            style="@style/txt_opensans_b_11_greyishbrown"
+                            android:visibility="invisible"/>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_route_seprator"
+                        android:layout_width="10dp"
+                        android:layout_height="3dp"
+                        android:layout_toEndOf="@+id/lo_pol"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:id="@+id/lo_pod"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/vw_route_seprator"
+                        android:layout_marginStart="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_pod_cd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/pod_cd_hint"
+                            style="@style/txt_opensans_eb_18_4c4c4c"/>
+                        <TextView
+                            android:id="@+id/tv_pod_cnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/pod_count_hint"
+                            style="@style/txt_opensans_b_11_greyishbrown"
+                            android:visibility="invisible"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- 하단: 상세 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pol_name"
+                        style="@style/txt_opensans_r_11_bfbfbf"
+                        android:layout_width="132dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/pol_name_hint" />
+
+                    <View
+                        android:id="@+id/vw_route_name_seprator"
+                        android:layout_width="10dp"
+                        android:layout_height="3dp"
+                        android:layout_toEndOf="@+id/tv_pol_name"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_pod_name"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/vw_route_name_seprator"
+                        android:gravity="center_vertical"
+                        android:text="@string/pod_name_hint"
+                        style="@style/txt_opensans_r_11_bfbfbf"/>
+
+                </RelativeLayout>
+
+                <!-- 하단: ETD -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_etd"
+                        style="@style/txt_opensans_b_13_737373"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="start|center_vertical"
+                        android:text="ETD" />
+                    <TextView
+                        android:id="@+id/tv_etd_time"
+                        style="@style/txt_opensans_r_13_737373"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="start|center_vertical"
+                        android:layout_toEndOf="@+id/tv_etd"
+                        android:text=" '20-04-30 12:00" />
+
+                    <View
+                        android:id="@+id/vw_etd_seprator"
+                        android:layout_width="29dp"
+                        android:layout_height="3dp"
+                        android:layout_toEndOf="@+id/tv_etd_time"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/vw_etd_seprator"
+                        android:gravity="center_vertical"
+                        android:text="ETA"
+                        style="@style/txt_opensans_b_13_737373"/>
+
+                    <TextView
+                        android:id="@+id/tv_eta_time"
+                        style="@style/txt_opensans_r_13_737373"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="start|center_vertical"
+                        android:layout_toEndOf="@+id/tv_eta"
+                        android:text=" '20-04-30 12:00" />
+
+                </RelativeLayout>
+
+                <!-- seperator 2 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_f2f2f2"/>
+
+                <!-- extend button-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_expand"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:clickable="true"
+                        android:src="@drawable/btn_expand_default_l"/>
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ll_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/color_f2f2f2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/txt_opensans_b_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="9dp"
+                        android:text="@string/booking_dashboard_booking_no"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_booking_no"
+                        style="@style/txt_opensans_r_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="9dp"
+                        android:text="AL0005989555"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:background="@color/color_f2f2f2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- b/l No. -->
+
+                    <TextView
+                        style="@style/txt_opensans_b_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:text="@string/booking_dashboard_bl_no"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_bl_no"
+                        style="@style/txt_opensans_r_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="48dp"
+                        android:text="-"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="76dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:background="@color/color_f2f2f2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- container No. -->
+                    <TextView
+                        style="@style/txt_opensans_b_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="87dp"
+                        android:text="@string/booking_dashboard_container_no"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_container_no"
+                        style="@style/txt_opensans_r_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="87dp"
+                        android:text="Container NO."
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="115dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:background="@color/color_f2f2f2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- consignee -->
+                    <TextView
+                        style="@style/txt_opensans_b_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="126dp"
+                        android:text="@string/booking_dashboard_consignee"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_consignee"
+                        style="@style/txt_opensans_r_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="126dp"
+                        android:text="EUSU"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="154dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:background="@color/color_f2f2f2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- shipper -->
+                    <TextView
+                        style="@style/txt_opensans_b_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="165dp"
+                        android:text="@string/booking_dashboard_shipper"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_shipper"
+                        style="@style/txt_opensans_r_11_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="165dp"
+                        android:paddingBottom="16dp"
+                        android:text="Cyberlogitec, Seoul"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

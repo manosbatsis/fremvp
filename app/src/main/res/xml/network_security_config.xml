@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">www.amock.io</domain>
+        <domain includeSubdomains="true">api.freight9.com</domain>
+        <domain includeSubdomains="true">data.freight9.com</domain>
+        <domain includeSubdomains="true">wss.freight9.com</domain>
+        <domain includeSubdomains="true">freight9.com</domain>
+        <domain includeSubdomains="true">34.64.253.200</domain>
+    </domain-config>
+</network-security-config>

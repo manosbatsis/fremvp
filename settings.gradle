@@ -1,0 +1,1 @@
+include ':app', ':MPChartLib-release', ':StompProtocolAndroid-1.6.4'

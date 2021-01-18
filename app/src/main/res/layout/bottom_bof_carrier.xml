@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".ui.buyoffer.BofCarrierAct"
+    tools:showIn="@layout/act_bof_carrier"
+    android:gravity="center_vertical">
+
+    <Button
+        android:id="@+id/btn_bof_carrier_next_floating"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_button_bottom"
+        android:gravity="center"
+        android:text="@string/apply"
+        style="@style/txt_opensans_eb_16_white"
+        android:textAllCaps="true"
+        android:enabled="true"/>
+
+</LinearLayout>

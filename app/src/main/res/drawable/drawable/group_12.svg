@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+    <defs>
+        <linearGradient id="prefix__c" x1="0%" x2="100%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#4A00E0"/>
+            <stop offset="26.038%" stop-color="#400FD6"/>
+            <stop offset="100%" stop-color="#13003B"/>
+        </linearGradient>
+        <rect id="prefix__a" width="512" height="512" x="0" y="0" rx="80"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#prefix__a"/>
+        <g mask="url(#prefix__b)">
+            <path fill="url(#prefix__c)" d="M0 512L512 512 512 0 0 0z"/>
+            <g>
+                <path fill="#000" fill-opacity=".33" d="M143.841 28.4L338 226.5 338 371 167.152 371 11 212.632 92.805 211.225z" transform="translate(174 141)"/>
+                <path fill="#FFF" d="M162.899 85.58c.123-2.548.1-3.94.1-3.94 0-45.089-36.49-81.64-81.5-81.64S0 36.551 0 81.64c0 41.115 30.344 75.116 69.818 80.794-25.704 35.82-58.705 50.054-58.705 50.054L80.823 230c72.32-51.778 81.007-124.797 82.035-143.704.013-.238.03-.477.04-.716" transform="translate(174 141)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:keepScreenOn="true">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/toolbar_common"/>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:paddingTop="56dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Route"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="route select from -> to"
+					/>
+
+			</LinearLayout>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:text="Period"/>
+			<TextView
+				android:id="@+id/booking_etd"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:text="ETD"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:layout_margin="10dp">
+				<TextView
+					android:id="@+id/booking_etd_date"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="2019-09-01 ~ 2019-10-11"/>
+			</LinearLayout>
+			<TextView
+				android:id="@+id/booking_eta"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:text="ETA"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:layout_margin="10dp">
+				<TextView
+					android:id="@+id/booking_eta_date"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="2019-09-01 ~ 2019-10-11"/>
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Receive/Delivery Term"/>
+			<!-- delivery term container-->
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recycler_receive_delivery"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:clipToPadding="false"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp">
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Container"/>
+		</LinearLayout>
+		<!-- button -->
+		<Button
+			android:id="@+id/btn_container_select"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_gravity="center|bottom"
+			android:layout_margin="0dp"
+			android:background="@color/blue_violet"
+			android:text="@string/select"
+			android:textAllCaps="true"
+			style="@style/txt_opensans_b_16_white"/>
+		<!-- button -->
+		<Button
+			android:id="@+id/btn_search"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_gravity="center|bottom"
+			android:layout_margin="0dp"
+			android:background="@color/blue_violet"
+			android:text="@string/search"
+			android:textAllCaps="true"
+			android:textColor="@android:color/white"
+			style="@style/txt_opensans_b_16_white" />
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

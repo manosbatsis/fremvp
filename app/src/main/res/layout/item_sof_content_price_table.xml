@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/item_sof_content_price_table"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/price_table_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:elevation="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text=""
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="20'"
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="40'"
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="40'HC"
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="45'HC"
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+    </LinearLayout>
+</FrameLayout>

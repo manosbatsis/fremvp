@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.selloffer.SofConditionAct"
+    tools:showIn="@layout/act_sof_condition"
+    android:background="@color/pale_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:background="@color/pale_gray">
+
+        <!-- 1st : total deal amount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:background="@drawable/bg_rectangle_ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Total Deal Amout"
+                style="@style/txt_opensans_r_15_greyishbrown"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="left"
+                android:background="#f2f2f2"/>
+
+            <TextView
+                android:id="@+id/tv_sof_conditiontotal_deal_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="$1,500"
+                style="@style/txt_opensans_b_30_greyishbrown"/>
+        </LinearLayout>
+
+        <!-- 2nd : Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="16dp"
+            android:text="Collect Plan"
+            style="@style/txt_opensans_eb_25_greyishbrown"/>
+
+        <!-- 3nd : Radio button select -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="0dp">
+
+            <RadioGroup
+                android:id="@+id/rgPlanType"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/rbPrepaid">
+                <RadioButton
+                    android:id="@+id/rbPrepaid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_common_checkbox01"
+                    android:paddingStart="4dp"
+                    android:text="Prepaid"
+                    style="@style/txt_opensans_b_13_greyishbrown"/>
+                <RadioButton
+                    android:id="@+id/rbCollect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_common_checkbox01"
+                    android:layout_marginStart="20dp"
+                    android:paddingStart="4dp"
+                    android:text="Collect"
+                    style="@style/txt_opensans_r_13_greyishbrown"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 4th card : condition 1 -->
+        <LinearLayout
+            android:id="@+id/lo_condition1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_rectangle_blue_border">
+
+            <!-- title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_check_condition1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/btn_checkbox_solid_selected_l"/>
+
+                <TextView
+                    android:id="@+id/tv_condition1_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Basic Payment Plan"
+                    style="@style/txt_opensans_b_15_white"/>
+            </LinearLayout>
+
+            <!--  body -->
+            <LinearLayout
+                android:id="@+id/lo_condition1_body"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <!-- sub title : 1st -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Initial"
+                        android:layout_marginStart="44dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Mid Term"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Remainder"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                </RelativeLayout>
+
+                <!-- condition 1 percent : 3rd -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="30%"
+                        android:layout_marginStart="33dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="60%"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="10%"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown"/>
+                </RelativeLayout>
+
+                <!-- condition 1 value : 4th -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$450"
+                        android:layout_marginStart="44dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$900"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$150"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 4th card : condition 2 -->
+        <LinearLayout
+            android:id="@+id/lo_condition2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_rectangle_blue_border">
+
+            <!-- title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_check_condition2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/btn_checkbox_solid_selected_l"/>
+
+                <TextView
+                    android:id="@+id/tv_condition2_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Collect-First Payment Plan"
+                    style="@style/txt_opensans_b_15_white"/>
+            </LinearLayout>
+
+            <!--  body -->
+            <LinearLayout
+                android:id="@+id/lo_condition2_body"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <!-- sub title : 1st -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Initial"
+                        android:layout_marginStart="44dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Mid Term"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Remainder"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                </RelativeLayout>
+
+                <!-- condition 1 percent : 3rd -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="30%"
+                        android:layout_marginStart="33dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="60%"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="10%"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown"/>
+                </RelativeLayout>
+
+                <!-- condition 1 value : 4th -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$450"
+                        android:layout_marginStart="44dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$900"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$150"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 4th card : condition 3 -->
+        <LinearLayout
+            android:id="@+id/lo_condition3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_rectangle_blue_border">
+
+            <!-- title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_check_condition3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/btn_checkbox_solid_selected_l"/>
+
+                <TextView
+                    android:id="@+id/tv_condition3_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Collect-Later Payment Plan"
+                    style="@style/txt_opensans_b_15_white"/>
+            </LinearLayout>
+
+            <!--  body -->
+            <LinearLayout
+                android:id="@+id/lo_condition3_body"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <!-- sub title : 1st -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Initial"
+                        android:layout_marginStart="44dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Mid Term"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Remainder"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_eb_8_greyishbrown" />
+                </RelativeLayout>
+
+                <!-- condition 1 percent : 3rd -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="30%"
+                        android:layout_marginStart="33dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="60%"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="10%"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_eb_22_greyishbrown"/>
+                </RelativeLayout>
+
+                <!-- condition 1 value : 4th -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$450"
+                        android:layout_marginStart="44dp"
+                        android:layout_alignParentStart="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$900"
+                        android:layout_centerInParent="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="$150"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        style="@style/txt_opensans_r_13_greyishbrown" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- view: add bottom view -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

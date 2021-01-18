@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pale_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_order_week_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical|left"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="W04"/>
+
+        <TextView
+            android:id="@+id/tv_order_bidprice_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_r_13_greyishbrown"
+            android:text="$500/T"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical|right"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="x"/>
+            <TextView
+                android:id="@+id/tv_order_bidvolume_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                style="@style/txt_opensans_r_13_greyishbrown"
+                android:text="999T"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_yourinventory_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"
+            android:gravity="center_vertical|right"
+            style="@style/txt_opensans_b_13_blueviolet"
+            android:text="5,000T"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

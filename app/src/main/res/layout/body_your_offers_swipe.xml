@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_your_offers_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:overScrollMode="never"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+    <!-- background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_tab_01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_tab_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="01"
+                    style="@style/txt_opensans_eb_16_white"/>
+                <View
+                    android:id="@+id/vw_underbar_01"
+                    android:layout_width="19dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/purpley_blue"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_tab_02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_tab_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02"
+                    style="@style/txt_opensans_r_16_greyishbrown"/>
+                <View
+                    android:id="@+id/vw_underbar_02"
+                    android:layout_width="19dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/color_1d1d1d"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:name="com.cyberlogitec.freight9.ui.youroffers.YourOfferSwipePreviewFragment"/>
+
+    </LinearLayout>
+</FrameLayout>

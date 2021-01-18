@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1d1d1d"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.booking.BookingDashboardDetailActivity"
+    tools:showIn="@layout/act_booking_dashboard_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f4f9"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/txt_opensans_eb_13_4c4c4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/booking_dashboard_bkg_no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_booking_no_title"
+                style="@style/txt_opensans_eb_25_4c4c4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_booking_no_title">
+
+                <include layout="@layout/item_booking_dashboard" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cutoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                style="@style/CardViewStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="177dp"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/txt_opensans_b_15_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/booking_dashboard_cutoff"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_circle_8_ff4444"
+                        app:layout_constraintEnd_toStartOf="@+id/textView14"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        style="@style/txt_opensans_r_10_ff4444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="@string/booking_dashboard_cutoff_24hr"
+                        app:layout_constraintEnd_toStartOf="@+id/textView13"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_circle_8_ffa241"
+                        app:layout_constraintEnd_toStartOf="@+id/textView13"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/txt_opensans_r_10_ffa241"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="@string/booking_dashboard_cutoff_72hr"
+                        app:layout_constraintEnd_toStartOf="@+id/textView12"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_circle_8_3bd090"
+                        app:layout_constraintEnd_toStartOf="@+id/textView12"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/txt_opensans_r_10_3bd090"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="@string/booking_dashboard_cutoff_72hr_over"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/color_f2f2f2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- si & doc-->
+
+                    <View
+                        android:id="@+id/v_sidoc_status"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="58dp"
+                        android:background="@drawable/bg_circle_8_f0f0f0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_sidoc_title"
+                        style="@style/txt_opensans_b_13_bfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="52dp"
+                        android:text="@string/booking_dashboard_si_doc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_sidoc_date"
+                        style="@style/txt_opensans_r_11_bfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="19-10-22 19:00:00"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!-- bldrafting-->
+                    <View
+                        android:id="@+id/v_bl_status"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="88dp"
+                        android:background="@drawable/bg_circle_8_ff4444"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_bl_title"
+                        style="@style/txt_opensans_b_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="82dp"
+                        android:text="@string/booking_dashboard_bldraft"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_bl_date"
+                        style="@style/txt_opensans_r_11_bfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="82dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="19-10-22 19:00:00"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- vgm-->
+                    <View
+                        android:id="@+id/v_vgm_status"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="118dp"
+                        android:background="@drawable/bg_circle_8_ffa241"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_vgm_title"
+                        style="@style/txt_opensans_b_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="112dp"
+                        android:text="@string/booking_dashboard_vgm"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_vgm_date"
+                        style="@style/txt_opensans_r_11_bfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="112dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="19-10-22 19:00:00"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- advance manifest-->
+                    <View
+                        android:id="@+id/v_advance_status"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="148dp"
+                        android:background="@drawable/bg_circle_8_3bd090"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_advance_title"
+                        style="@style/txt_opensans_b_13_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="142dp"
+                        android:text="@string/booking_dashboard_andvance_manifest"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/v_advance_date"
+                        style="@style/txt_opensans_r_11_bfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="142dp"
+                        android:layout_marginEnd="23dp"
+                        android:text="19-10-22 19:00:00"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_condition_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/CardViewStyle"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/cv_cutoff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    >
+                    <TextView
+                        style="@style/txt_opensans_b_15_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerInParent="true"
+                        android:text="@string/booking_dashboard_condition_details" />
+                    <ImageView
+                        android:id="@+id/iv_condition_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_go_default_l"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- vessle schedule-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_vessel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/CardViewStyle"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/cv_condition_details">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    >
+                    <TextView
+                        style="@style/txt_opensans_b_15_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerInParent="true"
+                        android:text="@string/booking_dashboard_vessel_schedule" />
+                    <ImageView
+                        android:id="@+id/iv_vessel_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_go_default_l"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/CardViewStyle"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/cv_vessel">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+                    <TextView
+                        style="@style/txt_opensans_b_15_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerInParent="true"
+                        android:text="@string/booking_dashboard_charge" />
+                    <ImageView
+                        android:id="@+id/iv_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_go_default_l"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_parties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/CardViewStyle"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/cv_charge">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+                    <TextView
+                        style="@style/txt_opensans_b_15_4c4c4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/booking_dashboard_parties" />
+
+                    <ImageView
+                        android:id="@+id/iv_parties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:src="@drawable/btn_go_default_l" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_si_vgm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/cv_parties">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    style="@style/CardViewStyle">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_si_doc"
+                        android:layout_width="156dp"
+                        android:layout_height="156dp"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:background="#94d8d8d8" />
+
+                        <TextView
+                            style="@style/txt_opensans_b_15_4c4c4c"
+                            android:layout_width="112dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/booking_dashboard_si_doc"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    style="@style/CardViewStyle"
+                    android:layout_gravity="end|center_vertical">
+                    <RelativeLayout
+                        android:id="@+id/rl_vgm"
+                        android:layout_width="156dp"
+                        android:layout_height="156dp"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:background="#94d8d8d8" />
+
+                        <TextView
+                            style="@style/txt_opensans_b_15_4c4c4c"
+                            android:layout_width="112dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/booking_dashboard_vgm"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="20dp"
+                android:paddingHorizontal="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/ll_si_vgm">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    style="@style/CardViewStyle">
+                    <RelativeLayout
+                        android:id="@+id/rl_bl_invoice"
+                        android:layout_width="156dp"
+                        android:layout_height="156dp"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:background="#94d8d8d8" />
+
+                        <TextView
+                            style="@style/txt_opensans_b_15_4c4c4c"
+                            android:layout_width="112dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/booking_dashboard_bl_invoice"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    style="@style/CardViewStyle"
+                    android:layout_gravity="end|center_vertical">
+                    <RelativeLayout
+                        android:id="@+id/rl_cargo_tracking"
+                        android:layout_width="156dp"
+                        android:layout_height="156dp"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:background="#94d8d8d8" />
+                        <TextView
+                            style="@style/txt_opensans_b_15_4c4c4c"
+                            android:layout_width="114dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/booking_dashboard_cargo_tracking"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

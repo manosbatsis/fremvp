@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_sof_header_volume"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    android:elevation="0dp"
+    android:background="@color/white">
+
+    <!-- 상단 : Container type -->
+    <RelativeLayout
+        android:id="@+id/lo_volume_batch_input"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/iv_check_mark"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_unchecked_round_gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/iv_check_mark"
+            android:text="@string/volume_batch_input"
+            style="@style/txt_opensans_r_13_greyishbrown"/>
+    </RelativeLayout>
+
+    <!-- 중단 : Container type -->
+    <RelativeLayout
+        android:id="@+id/lo_volume_batch_input_select"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lo_check_volume_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true">
+            <CheckBox
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="start|center_vertical"
+                android:checked="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_checkbox_sof_volume_batch"
+                />
+
+            <TextView
+                android:id="@+id/tv_sof_volume_input"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:background="@drawable/bg_round_corner_blue_violet"
+                android:text=""
+                style="@style/txt_opensans_b_13_blueviolet"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_check_max_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/lo_check_volume_batch"
+            android:layout_centerInParent="true">
+
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="16dp"
+                android:layout_gravity="start|center_vertical"
+                android:background="@drawable/selector_checkbox_sof_volume_batch"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:focusable="false"/>
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:layout_marginStart="8dp"
+                android:focusable="false"
+                android:text="@string/max"
+                style="@style/txt_opensans_b_13_bfbfbf"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 하단 : Container type -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_all"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="0dp"
+            android:checked="false"
+            android:enabled="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:button="@android:color/transparent"
+            android:background="@drawable/selector_checkbox_sof_price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/chk_all"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="Period"
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="Offered / Sellable"
+            style="@style/txt_opensans_b_11_greyishbrown"/>
+
+    </RelativeLayout>
+</LinearLayout>

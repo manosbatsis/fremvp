@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1a1a1a"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <LinearLayout
+        android:id="@+id/ll_period"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="right|bottom">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical">
+            <CheckBox
+                android:id="@+id/cb_trade_offerlist_viewperiod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_checkbox_market_split"
+                />
+            <TextView
+                android:id="@+id/tv_view_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/split_market_offers_view_peroid"
+                style="@style/txt_opensans_r_13_greyishbrown"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_market_offer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+</LinearLayout>

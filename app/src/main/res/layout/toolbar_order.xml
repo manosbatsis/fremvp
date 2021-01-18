@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/title_bar">
+
+    <ImageView android:id="@+id/toolbar_left_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_toolbar_back"/>
+
+    <TextView android:id="@+id/toolbar_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        tools:text="Common Title"
+        style="@style/txt_opensans_eb_20_white"/>
+
+    <ImageView android:id="@+id/toolbar_right_btn"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/ic_toolbar_menu"
+        android:visibility="gone"/>
+
+    <TextView android:id="@+id/toolbar_done_btn"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:layout_alignParentEnd="true"
+        android:text="@string/done"
+        style="@style/txt_opensans_b_15_white"
+        android:visibility="gone"/>
+
+    <TextView android:id="@+id/toolbar_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        style="@style/txt_opensans_b_15_white"
+        android:text="@string/cancel"/>
+
+</RelativeLayout>

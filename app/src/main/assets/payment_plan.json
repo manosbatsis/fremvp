@@ -1,0 +1,41 @@
+[
+  {
+    "commonDataName" : null,
+    "commonErrorCode" : null,
+    "commonErrorMessage" : null,
+    "commonTreatCode" : null,
+    "commonTreatMessage" : null,
+    "id" : 1,
+    "paymentPlanCode" : "01PS",
+    "paymentPlanName" : "Standard Payment Plan",
+    "initialPaymentRatio" : 0.3,
+    "middlePaymentRatio" : 0.6,
+    "balancePaymentRatio" : 0.1
+  },
+  {
+    "commonDataName" : null,
+    "commonErrorCode" : null,
+    "commonErrorMessage" : null,
+    "commonTreatCode" : null,
+    "commonTreatMessage" : null,
+    "id" : 2,
+    "paymentPlanCode" : "01PF",
+    "paymentPlanName" : "Pay-First Payment Plan",
+    "initialPaymentRatio" : 0.5,
+    "middlePaymentRatio" : 0.4,
+    "balancePaymentRatio" : 0.1
+  },
+  {
+    "commonDataName" : null,
+    "commonErrorCode" : null,
+    "commonErrorMessage" : null,
+    "commonTreatCode" : null,
+    "commonTreatMessage" : null,
+    "id" : 3,
+    "paymentPlanCode" : "01PL",
+    "paymentPlanName" : "Pay-Later Payment Plan",
+    "initialPaymentRatio" : 0.1,
+    "middlePaymentRatio" : 0.8,
+    "balancePaymentRatio" : 0.1
+  }
+]

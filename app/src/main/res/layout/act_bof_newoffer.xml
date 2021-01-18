@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!-- toolbar_common -->
+	<include layout="@layout/appbar_bof_newoffer"/>
+
+	<!-- body_bof_newoffer -->
+	<include layout="@layout/body_bof_newoffer"/>
+
+	<FrameLayout
+		android:id="@+id/fl_new_offer_draft"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom"
+		android:visibility="gone">
+		<Button
+			android:id="@+id/btn_new_offer_draft"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/button_bottom_enable_disable"
+			android:gravity="center"
+			android:enabled="true"
+			android:text="@string/offer_make_a_new_buy_offer"
+			style="@style/txt_opensans_eb_16_white"/>
+	</FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
